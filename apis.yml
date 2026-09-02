@@ -86,6 +86,12 @@ common:
   url: https://specifications.openehr.org/releases/ITS-JSON/latest/
 - type: Conformance
   url: https://developer.openehr.org/conformance/
+- type: Participants
+  url: https://openehr.org/industry-partners/
+- type: Adopters
+  url: https://openehr.org/organisation-partners/
+- type: WorkingGroups
+  url: https://openehr.org/programs/specification/board_members
 apis:
 - aid: openehr:ehr
   name: openEHR EHR API

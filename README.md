@@ -145,6 +145,14 @@ The GitHub maturity harvest returned **52 unclassified** repositories: openEHR d
 in repo descriptions the way CAMARA does. `taxonomy/` is the authoritative maturity read, and it comes
 from openEHR's own machine-readable catalog rather than from us.
 
+**Correction (2026-09-02, same day).** An earlier version of this README said openEHR's matching key is
+"a bare org name typed into a table, not a URL." That is wrong. openEHR publishes **name + website URL**
+for its partners on two pages — `openehr.org/industry-partners/` (35 vendors) and
+`openehr.org/organisation-partners/` (15 public bodies) — so matching here can be authoritative by
+domain, exactly like OGC, rather than by name guessing. The `companies/` artifact in this repo is
+derived from the *program-board rosters*, which genuinely carry no URLs; the partner pages are a
+separate and better source, and they are what the vendor cohort in `leads/` was harvested from.
+
 One matcher correction was made: **Better** (better.care, the Slovenian openEHR platform vendor) was
 matched to `all/better`, which is **better.com**, the US mortgage lender. That pair is now in the
 `REJECT` set in `match-standards-companies.py` and Better is recorded as a lead.
