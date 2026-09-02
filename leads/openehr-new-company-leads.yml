@@ -1,0 +1,252 @@
+generated: '2026-09-02'
+method: derived
+source: derived from openehr/companies/openehr-companies.yml
+type: Leads
+summary:
+  leads: 34
+  min_participants: 1
+  with_governance_seat: 34
+leads:
+- name: Nedap Healthcare
+  suggested_slug: nedap-healthcare
+  participants: 3
+  governance_seats: 3
+  bodies:
+  - Specification Program (SEC)
+  - Clinical Program Board (CPB)
+  source_standard: openehr
+- name: University Hospital Basel
+  suggested_slug: university-hospital-basel
+  participants: 2
+  governance_seats: 2
+  bodies:
+  - Clinical Program Board (CPB)
+  source_standard: openehr
+- name: ADOC Software Development
+  suggested_slug: adoc-software-development
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  source_standard: openehr
+- name: Aston University
+  suggested_slug: aston-university
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Clinical Program Board (CPB)
+  source_standard: openehr
+- name: Atomica Informatics
+  suggested_slug: atomica-informatics
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Clinical Program Board (CPB)
+  source_standard: openehr
+- name: Better
+  suggested_slug: better
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  source_standard: openehr
+- name: CaboLabs
+  suggested_slug: cabolabs
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  source_standard: openehr
+- name: Cambio Healthcare Systems
+  suggested_slug: cambio-healthcare-systems
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  source_standard: openehr
+- name: Catalan Health
+  suggested_slug: catalan-health
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Clinical Program Board (CPB)
+  source_standard: openehr
+- name: CatSalut
+  suggested_slug: catsalut
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - CIC Board
+  - Specification Program (SEC)
+  source_standard: openehr
+- name: Code24 BV
+  suggested_slug: code24-bv
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  source_standard: openehr
+- name: DIPS asa
+  suggested_slug: dips-asa
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  source_standard: openehr
+- name: EHRbase
+  suggested_slug: ehrbase
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  source_standard: openehr
+- name: Global eHealth Collaborative (GEHCO)
+  suggested_slug: global-ehealth-collaborative-gehco
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Education Program Board (EPB)
+  source_standard: openehr
+- name: GraphiteHealth
+  suggested_slug: graphitehealth
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - openEHR Foundation Board
+  - Specification Program (SEC)
+  source_standard: openehr
+- name: Helse Vest ITK
+  suggested_slug: helse-vest-itk
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Clinical Program Board (CPB)
+  source_standard: openehr
+- name: HIGHmed Consortium
+  suggested_slug: highmed-consortium
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  source_standard: openehr
+- name: Kyoto University
+  suggested_slug: kyoto-university
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  source_standard: openehr
+- name: Linköping University
+  suggested_slug: link-ping-university
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  source_standard: openehr
+- name: Luxembourg Institute of Health
+  suggested_slug: luxembourg-institute-of-health
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Clinical Program Board (CPB)
+  source_standard: openehr
+- name: Marand
+  suggested_slug: marand
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  source_standard: openehr
+- name: Medblocks
+  suggested_slug: medblocks
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  source_standard: openehr
+- name: NHS Scotland National Digital Platform
+  suggested_slug: nhs-scotland-national-digital-platform
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Clinical Program Board (CPB)
+  source_standard: openehr
+- name: Ocean Health Systems
+  suggested_slug: ocean-health-systems
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  - Clinical Program Board (CPB)
+  source_standard: openehr
+- name: Ocean Informatics UK
+  suggested_slug: ocean-informatics-uk
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  source_standard: openehr
+- name: openEHR International
+  suggested_slug: openehr-international
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - openEHR International (CIC)
+  - CIC Board
+  source_standard: openehr
+- name: openFHIR
+  suggested_slug: openfhir
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  source_standard: openehr
+- name: Oslo University Hospital
+  suggested_slug: oslo-university-hospital
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Clinical Program Board (CPB)
+  source_standard: openehr
+- name: Peter L. Reichertz Institute for Medical Informatics
+  suggested_slug: peter-l-reichertz-institute-for-medical-informatics
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  source_standard: openehr
+- name: Rosaldo Oy
+  suggested_slug: rosaldo-oy
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Education Program Board (EPB)
+  source_standard: openehr
+- name: The Clinician
+  suggested_slug: the-clinician
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Clinical Program Board (CPB)
+  source_standard: openehr
+- name: UiT The Arctic University of Norway
+  suggested_slug: uit-the-arctic-university-of-norway
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Education Program Board (EPB)
+  source_standard: openehr
+- name: VeraTech for Health
+  suggested_slug: veratech-for-health
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Education Program Board (EPB)
+  source_standard: openehr
+- name: vitagroup
+  suggested_slug: vitagroup
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  source_standard: openehr

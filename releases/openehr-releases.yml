@@ -1,0 +1,187 @@
+generated: '2026-09-02'
+method: searched
+source: https://github.com/openEHR
+type: Releases
+organization: openEHR
+summary:
+  repositories_with_releases: 13
+  repositories_checked: 48
+  total_releases: 116
+releases:
+- repository: adl-tools
+  release_count: 1
+  latest:
+    tag: v2.1.0.3251
+    name: v2.1.0.3251-windows_64bit
+    published: '2026-04-10'
+    prerelease: false
+    url: https://github.com/openEHR/adl-tools/releases/tag/v2.1.0.3251
+  tags:
+  - v2.1.0.3251
+- repository: ai-plugins
+  release_count: 2
+  latest:
+    tag: openehr-specs--v0.2.0
+    name: openehr-specs 0.2.0
+    published: '2026-06-05'
+    prerelease: false
+    url: https://github.com/openEHR/ai-plugins/releases/tag/openehr-specs--v0.2.0
+  tags:
+  - openehr-specs--v0.2.0
+  - openehr-specs--v0.1.0
+- repository: archie
+  release_count: 81
+  latest:
+    tag: v3.19.0
+    name: Archie v3.19.0
+    published: '2026-07-08'
+    prerelease: false
+    url: https://github.com/openEHR/archie/releases/tag/v3.19.0
+  tags:
+  - v3.19.0
+  - v3.18.0
+  - v3.17.0
+  - v3.16.0
+  - v3.15.0
+  - v3.14.0
+  - v3.13.1
+  - v3.13.0
+  - v3.12.0
+  - v3.11.0
+  - v3.10.0
+  - v3.9.1
+  - v3.9.0
+  - v3.8.0
+  - v3.7.0
+  - v3.6.0
+  - v3.5.0
+  - v3.4.0
+  - v3.3.0
+  - v3.2.0
+  - v3.1.0
+  - v3.0.0
+  - v2.1.0
+  - v2.0.5
+  - v2.0.4
+- repository: bmm-publisher
+  release_count: 11
+  latest:
+    tag: 0.10.0
+    name: 0.10.0
+    published: '2026-07-15'
+    prerelease: false
+    url: https://github.com/openEHR/bmm-publisher/releases/tag/0.10.0
+  tags:
+  - 0.10.0
+  - 0.9.0
+  - 0.8.0
+  - 0.7.0
+  - 0.6.0
+  - 0.5.0
+  - 0.4.0
+  - 0.3.0
+  - 0.2.2
+  - 0.2.1
+  - 0.2.0
+- repository: openEHR-TDD2canonical
+  release_count: 1
+  latest:
+    tag: v0.0.1-SNAPSHOT
+    name: First public release
+    published: '2019-10-22'
+    prerelease: true
+    url: https://github.com/openEHR/openEHR-TDD2canonical/releases/tag/v0.0.1-SNAPSHOT
+  tags:
+  - v0.0.1-SNAPSHOT
+- repository: specifications-AM
+  release_count: 4
+  latest:
+    tag: Release-2.3.0
+    name: Release-2.3.0
+    published: '2024-03-20'
+    prerelease: false
+    url: https://github.com/openEHR/specifications-AM/releases/tag/Release-2.3.0
+  tags:
+  - Release-2.3.0
+  - Release-2.0.6v3
+  - Release-2.1.0v11
+  - Release-2.2.0v8
+- repository: specifications-CDS
+  release_count: 1
+  latest:
+    tag: Release-2.0.0
+    name: Release-2.0.0
+    published: '2023-08-17'
+    prerelease: false
+    url: https://github.com/openEHR/specifications-CDS/releases/tag/Release-2.0.0
+  tags:
+  - Release-2.0.0
+- repository: specifications-ITS
+  release_count: 1
+  latest:
+    tag: Release-1.0.2
+    name: Release-1.0.2
+    published: '2021-03-21'
+    prerelease: false
+    url: https://github.com/openEHR/specifications-ITS/releases/tag/Release-1.0.2
+  tags:
+  - Release-1.0.2
+- repository: specifications-ITS-REST
+  release_count: 5
+  latest:
+    tag: Release-1.1.0
+    name: Release-1.1.0
+    published: '2026-07-19'
+    prerelease: false
+    url: https://github.com/openEHR/specifications-ITS-REST/releases/tag/Release-1.1.0
+  tags:
+  - Release-1.1.0
+  - Release-1.0.3v1
+  - Release-1.0.2v2
+  - Release-1.0.1
+  - Release-1.0.0
+- repository: specifications-ITS-XML
+  release_count: 3
+  latest:
+    tag: Release-2.0.0v2
+    name: Release-2.0.0
+    published: '2021-04-26'
+    prerelease: false
+    url: https://github.com/openEHR/specifications-ITS-XML/releases/tag/Release-2.0.0v2
+  tags:
+  - Release-2.0.0v2
+  - Release-1.0.2v2
+  - Release-2.0.0-rc
+- repository: specifications-PROC
+  release_count: 1
+  latest:
+    tag: Release-1.6.0v2
+    name: Release-1.6.0
+    published: '2024-08-06'
+    prerelease: false
+    url: https://github.com/openEHR/specifications-PROC/releases/tag/Release-1.6.0v2
+  tags:
+  - Release-1.6.0v2
+- repository: specifications-QUERY
+  release_count: 1
+  latest:
+    tag: Release-1.1.0
+    name: Release-1.1.0
+    published: '2021-05-14'
+    prerelease: false
+    url: https://github.com/openEHR/specifications-QUERY/releases/tag/Release-1.1.0
+  tags:
+  - Release-1.1.0
+- repository: specifications-TERM
+  release_count: 4
+  latest:
+    tag: Release-3.0.0
+    name: Release-3.0.0
+    published: '2023-06-26'
+    prerelease: false
+    url: https://github.com/openEHR/specifications-TERM/releases/tag/Release-3.0.0
+  tags:
+  - Release-3.0.0
+  - Release-2.4.0v3
+  - Release-2.3.0
+  - Release-2.2.0

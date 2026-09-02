@@ -1,0 +1,208 @@
+aid: openehr
+name: openEHR
+x-type: standards-body
+x-category: Specification
+x-host: null
+type: Index
+specificationVersion: '0.23'
+created: '2026-09-02'
+modified: '2026-09-02'
+url: https://raw.githubusercontent.com/api-evangelist/openehr/refs/heads/main/apis.yml
+description: 'openEHR is the open specification family for electronic health records, and the main structural alternative
+  to HL7 FHIR. It is governed by two UK not-for-profit entities: the openEHR Foundation, a company limited by guarantee
+  that holds the intellectual property, and the openEHR Community Interest Company, trading as openEHR International,
+  which has run day-to-day operations since 10 May 2019. Its defining idea is two-level modelling — a small, stable
+  Reference Model that software implements once, plus a large, separately governed body of clinician-authored archetypes
+  and templates expressed in the Archetype Definition Language and queried through the Archetype Query Language. The
+  specification site publishes 68 specifications across 14 components at three maturity levels of openEHR''s own declaring:
+  Stable (AM, BASE, CDS, ITS-REST, ITS-XML, LANG, QUERY, RM, TERM), Development (CNF, ITS-BMM, ITS-JSON, SM) and Paused
+  (PROC). The ITS-REST component ships real OpenAPI 3.0 for six API surfaces — EHR, Query, Definition and System are
+  STABLE, Demographic and Admin are DEVELOPMENT — under a Creative Commons Attribution-NoDerivs 3.0 licence, with
+  the tooling repositories under Apache-2.0. The coalition is unusually legible: 59 named people across the CIC Board,
+  Foundation Board and the Specification, Clinical and Education program boards, with employers published beside 37
+  of them. What this repo holds are SPECIFICATIONS, not services — every contract here has the templated server https://{baseUrl}/v1
+  and describes what a conformant implementation must offer, so none of it is a callable API and it must never be
+  read as one.'
+tags:
+- openEHR
+- Healthcare
+- EHR
+- Electronic Health Records
+- Health Informatics
+- Standards
+- Specification
+- Interoperability
+- Information Model
+- Archetypes
+- AQL
+- ADL
+- Clinical Modelling
+- Reference Model
+- Not-for-profit
+common:
+- type: AgenticAccess
+  url: agentic-access/openehr-agentic-access.yml
+- type: Website
+  url: https://openehr.org/
+- type: Specification
+  url: https://specifications.openehr.org/
+- type: GitHubOrganization
+  url: https://github.com/openEHR
+- type: SourceCode
+  url: https://github.com/openEHR/specifications-ITS-REST
+- type: Governance
+  url: https://openehr.org/governance/
+- type: Participants
+  url: https://openehr.org/specification-program/
+- type: Membership
+  url: https://openehr.org/professional-members-2/
+- type: ReleaseProcess
+  url: https://specifications.openehr.org/governance/release_strategy
+- type: Charter
+  url: https://specifications.openehr.org/governance/change_process
+- type: Registry
+  url: https://ckm.openehr.org/ckm/
+- type: MailingList
+  url: https://discourse.openehr.org/
+- type: News
+  url: https://openehr.org/news/
+- type: Events
+  url: https://openehr.org/events/
+- type: License
+  url: https://creativecommons.org/licenses/by-nd/3.0/
+- type: DeveloperPortal
+  url: https://developer.openehr.org/
+- type: Documentation
+  url: https://developer.openehr.org/implementation/
+- type: APIReference
+  url: https://specifications.openehr.org/releases/ITS-REST/latest/
+- type: LLMsTxt
+  url: https://specifications.openehr.org/llms.txt
+- type: ChangeLog
+  url: https://specifications.openehr.org/releases
+- type: Vocabulary
+  url: https://specifications.openehr.org/releases/TERM/latest/
+- type: JSONSchema
+  url: https://specifications.openehr.org/releases/ITS-JSON/latest/
+- type: Conformance
+  url: https://developer.openehr.org/conformance/
+apis:
+- aid: openehr:ehr
+  name: openEHR EHR API
+  description: The core openEHR record API — create and manage EHRs, compositions, directories, contributions and
+    versioned objects. openEHR SPECIFICATION, not a callable service — 33 operation(s) across 23 path(s), served from
+    the templated host `https://{baseUrl}/v1`.
+  humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  tags:
+  - openEHR
+  - Healthcare
+  - EHR
+  - Specification
+  x-status: STABLE
+  properties:
+  - type: OpenAPI
+    url: openapi/openehr-ehr-openapi.yml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  - type: SourceCode
+    url: https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/ehr-validation.openapi.yaml
+  - type: JSONSchema
+    url: json-schema/openehr-rm-1.1.0-all.json
+  - type: JSONSchema
+    url: https://specifications.openehr.org/releases/ITS-JSON/latest/components/openehr_rm_1.1.0_all.json
+- aid: openehr:query
+  name: openEHR Query API
+  description: Execute stored and ad-hoc Archetype Query Language (AQL) queries against an openEHR system. openEHR
+    SPECIFICATION, not a callable service — 6 operation(s) across 3 path(s), served from the templated host `https://{baseUrl}/v1`.
+  humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/query.html
+  tags:
+  - openEHR
+  - Healthcare
+  - EHR
+  - Specification
+  x-status: STABLE
+  properties:
+  - type: OpenAPI
+    url: openapi/openehr-query-openapi.yml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/query.html
+  - type: SourceCode
+    url: https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/query-validation.openapi.yaml
+- aid: openehr:definition
+  name: openEHR Definition API
+  description: Manage the definition layer — ADL 1.4 and ADL 2 templates, operational templates and stored queries.
+    openEHR SPECIFICATION, not a callable service — 13 operation(s) across 9 path(s), served from the templated host
+    `https://{baseUrl}/v1`.
+  humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/definition.html
+  tags:
+  - openEHR
+  - Healthcare
+  - EHR
+  - Specification
+  x-status: STABLE
+  properties:
+  - type: OpenAPI
+    url: openapi/openehr-definition-openapi.yml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/definition.html
+  - type: SourceCode
+    url: https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/definition-validation.openapi.yaml
+- aid: openehr:system
+  name: openEHR System API
+  description: System-level service endpoints for an openEHR server. openEHR SPECIFICATION, not a callable service
+    — 1 operation(s) across 1 path(s), served from the templated host `https://{baseUrl}/v1`.
+  humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/overview.html
+  tags:
+  - openEHR
+  - Healthcare
+  - EHR
+  - Specification
+  x-status: STABLE
+  properties:
+  - type: OpenAPI
+    url: openapi/openehr-system-openapi.yml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/overview.html
+  - type: SourceCode
+    url: https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/system-validation.openapi.yaml
+- aid: openehr:demographic
+  name: openEHR Demographic API
+  description: Party, role and demographic data handling. Published but marked DEVELOPMENT by openEHR. openEHR SPECIFICATION,
+    not a callable service — 42 operation(s) across 27 path(s), served from the templated host `https://{baseUrl}/v1`.
+  humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/demographic.html
+  tags:
+  - openEHR
+  - Healthcare
+  - EHR
+  - Specification
+  x-status: DEVELOPMENT
+  properties:
+  - type: OpenAPI
+    url: openapi/openehr-demographic-openapi.yml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/demographic.html
+  - type: SourceCode
+    url: https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/demographic-validation.openapi.yaml
+- aid: openehr:admin
+  name: openEHR Admin API
+  description: Administrative operations over EHRs. Published but marked DEVELOPMENT by openEHR. openEHR SPECIFICATION,
+    not a callable service — 2 operation(s) across 2 path(s), served from the templated host `https://{baseUrl}/v1`.
+  humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/admin.html
+  tags:
+  - openEHR
+  - Healthcare
+  - EHR
+  - Specification
+  x-status: DEVELOPMENT
+  properties:
+  - type: OpenAPI
+    url: openapi/openehr-admin-openapi.yml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/admin.html
+  - type: SourceCode
+    url: https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/admin-validation.openapi.yaml
+maintainers:
+- FN: Kin Lane
+  email: info@apievangelist.com
+  url: https://apievangelist.com
+image: https://openehr.org/wp-content/uploads/2024/11/openehr_logo_9DNsQEt-3.png

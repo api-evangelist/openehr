@@ -1,0 +1,486 @@
+generated: '2026-09-02'
+method: searched
+source: https://specifications.openehr.org/api/components.json
+type: standards-taxonomy
+note: 'openEHR''s OWN component catalog, read from the machine-readable endpoint the specification site publishes
+  rather than scraped from its navigation — so the maturity here is the body''s own word, not our classification.
+  The ladder is Stable / Development / Paused, and it is a genuine ladder: PROC (Process Model) is explicitly Paused,
+  and the Conformance, Service Model and JSON/BMM schema components are still in Development while the Reference
+  Model, Archetype Model, Query and REST components are Stable. Note this does NOT match the maturity read the GitHub
+  harvester produced — openEHR does not encode maturity in repo descriptions the way CAMARA does, so repositories/
+  shows 52 unclassified and this file is the authoritative read.'
+summary:
+  components: 14
+  specifications: 68
+  by_status:
+    Stable: 9
+    Development: 4
+    Paused: 1
+  stable_components:
+  - AM
+  - BASE
+  - CDS
+  - ITS-REST
+  - ITS-XML
+  - LANG
+  - QUERY
+  - RM
+  - TERM
+  development_components:
+  - CNF
+  - ITS-BMM
+  - ITS-JSON
+  - SM
+  paused_components:
+  - PROC
+components:
+- id: AM
+  title: Archetype Model
+  description: openEHR Archetype Model Component
+  status: Stable
+  latest_release: Release-2.3.0
+  specifications:
+  - id: Overview
+    title: Archetype Technology Overview
+    status: Stable
+    summary: Overview of archetype technology, basic semantics, types of artefact, parsing, compiling etc.
+    url: https://specifications.openehr.org/releases/AM/Release-2.3.0/Overview.html
+  - id: ADL2
+    title: Archetype Definition Language 2 (ADL2)
+    status: Stable
+    summary: 'Archetype Definition Language 2 (ADL2): includes differential specialisation, terminology integration.'
+    url: https://specifications.openehr.org/releases/AM/Release-2.3.0/ADL2.html
+  - id: AOM2
+    title: Archetype Object Model 2 (AOM2)
+    status: Stable
+    summary: Archetype Object Model 2 (AOM2) - full computable model of Archetypes and Templates. Includes uniquely
+      identified formally testable validity conditions (suitable for output by compilers), revised primitive types,
+      improved terminology section, and constraint model extended to represent differential archetypes. (ISO 13606-2:2019)
+    url: https://specifications.openehr.org/releases/AM/Release-2.3.0/AOM2.html
+  - id: OPT2
+    title: Operational Template 2 (OPT2)
+    status: Development
+    summary: Specification of the Operational Template 2 (OPT2) format.
+    url: https://specifications.openehr.org/releases/AM/Release-2.3.0/OPT2.html
+  - id: Identification
+    title: Archetype Identification
+    status: Stable
+    summary: Formal model of identifiers, versioning and lifecycle for archetypes, templates and terminology subsets.
+    url: https://specifications.openehr.org/releases/AM/Release-2.3.0/Identification.html
+  - id: ADL1.4
+    title: Archetype Definition Language 1.4 (ADL1.4)
+    status: Stable
+    summary: Abstract syntax specification for Archetype Definition Language (ADL), 1.4 edition of language (ISO
+      13606-2:2008).
+    url: https://specifications.openehr.org/releases/AM/Release-2.3.0/ADL1.4.html
+  - id: AOM1.4
+    title: Archetype Object Model 1.4 (AOM1.4)
+    status: Stable
+    summary: Archetype Object Model (AOM) 1.4 - syntax-independent model of archetypes corresponding to ADL 1.4.
+    url: https://specifications.openehr.org/releases/AM/Release-2.3.0/AOM1.4.html
+  - id: OPT1.4
+    title: Operational Template 1.4 (OPT)
+    status: Stable
+    summary: Specification of the Operational Template 1.4 (OPT) format.
+    url: https://specifications.openehr.org/releases/ITS-XML/latest/components/AM/Release-1.4/
+  - id: archetype_profile
+    title: openEHR Archetype Profile
+    status: Stable
+    summary: Legacy specification of plug-in semantics for AOM 1.4 (replaced by standard semantics in AOM 2).
+    url: https://specifications.openehr.org/releases/1.0.2/architecture/am/openehr_archetype_profile.pdf
+- id: BASE
+  title: Base Model
+  description: openEHR Base Model Component
+  status: Stable
+  latest_release: Release-1.2.0
+  specifications:
+  - id: architecture_overview
+    title: Architecture Overview
+    status: Stable
+    summary: '"Read me first" document for the overall architecture. Provides a summary of the reference, archetype
+      and service models, and describes global semantics.'
+    url: https://specifications.openehr.org/releases/BASE/Release-1.2.0/architecture_overview.html
+  - id: foundation_types
+    title: Foundation Types
+    status: Stable
+    summary: Specification of assumed, primitive and other foundation types required by all other openEHR specifications.
+    url: https://specifications.openehr.org/releases/BASE/Release-1.2.0/foundation_types.html
+  - id: base_types
+    title: Base Types
+    status: Stable
+    summary: Specification of basic openEHR and health informatics types used in other openEHR specifications.
+    url: https://specifications.openehr.org/releases/BASE/Release-1.2.0/base_types.html
+  - id: resource
+    title: Resource Model
+    status: Stable
+    summary: The Resource specification defines a formal model of authoring and IP meta-data, language translation
+      and annotations that can be used by classes defining any concrete type of authored resource, such as a document,
+      archetype or template.
+    url: https://specifications.openehr.org/releases/BASE/Release-1.2.0/resource.html
+  - id: iso_18308_conformance_statement
+    title: ISO 18308 Conformance Statement
+    status: Stable
+    summary: Document describing conformance of openEHR architecture to ISO TS 18308, "Requirements for EHR Architectures".
+    url: https://specifications.openehr.org/releases/1.0.2/requirements/iso18308_conformance.pdf
+- id: CDS
+  title: Clinical Decision Support
+  description: openEHR Clinical Decision Support Specifications
+  status: Stable
+  latest_release: Release-2.0.1
+  specifications:
+  - id: GDL
+    title: Guideline Definition Language (GDL)
+    status: Retired
+    summary: Guideline Definition Language based on archetype/template paths.
+    url: https://specifications.openehr.org/releases/CDS/Release-2.0.1/GDL.html
+  - id: GDL2
+    title: Guideline Definition Language v2 (GDL2)
+    status: Stable
+    summary: An improved variant of Guideline Definition Language, known as GDL2, based on archetype/template paths.
+    url: https://specifications.openehr.org/releases/CDS/Release-2.0.1/GDL2.html
+- id: CNF
+  title: Conformance Specifications
+  description: openEHR Conformance Specifications
+  status: Development
+  latest_release: development
+  specifications:
+  - id: guide
+    title: openEHR Conformance Guide
+    status: Development
+    summary: Guide to conformance testing in openEHR.
+    url: https://specifications.openehr.org/releases/CNF/development/guide.html
+  - id: platform_test_schedule
+    title: openEHR Platform Conformance Test Schedule
+    status: Development
+    summary: Specification of test cases for demonstrating conformance to the openEHR Platform definition.
+    url: https://specifications.openehr.org/releases/CNF/development/platform_test_schedule.html
+  - id: profiles
+    title: openEHR Platform Profiles
+    status: Development
+    summary: Profiles of platform components corresponding to common industry product offerings.
+    url: https://specifications.openehr.org/releases/CNF/development/profiles.html
+  - id: certificate
+    title: openEHR Conformance Certificate
+    status: Development
+    summary: openEHR Conformance Certificate.
+    url: https://specifications.openehr.org/releases/CNF/development/certificate.html
+- id: ITS-BMM
+  title: BMM Schemas
+  description: openEHR BMM Schemas
+  status: Development
+  latest_release: development
+  specifications:
+  - id: ITS-BMM
+    title: BMM Schemas
+    status: Trial
+    summary: BMM schemas for use with openEHR systems and tools
+    url: https://specifications.openehr.org/releases/ITS-BMM/development/components/
+- id: ITS-JSON
+  title: JSON Schemas
+  description: openEHR JSON Schemas
+  status: Development
+  latest_release: development
+  specifications:
+  - id: ITS-JSON
+    title: JSON Schemas
+    status: Development
+    summary: All openEHR JSON Schemas
+    url: https://specifications.openehr.org/releases/ITS-JSON/development/components/
+  - id: ITS-JSON-Overview
+    title: JSON Schemas Overview
+    status: Development
+    summary: JSON Schemas Overview
+    url: https://specifications.openehr.orghttps://github.com/openEHR/specifications-ITS-JSON/blob/master/README.adoc
+- id: ITS-REST
+  title: REST API specifications
+  description: openEHR REST API specifications Component (ITS-REST)
+  status: Stable
+  latest_release: Release-1.1.0
+  specifications:
+  - id: overview
+    title: REST API Overview
+    status: Stable
+    summary: The overview of various aspects and requirements of openEHR REST APIs.
+    url: https://specifications.openehr.org/releases/ITS-REST/Release-1.1.0/overview.html
+  - id: system
+    title: System REST API
+    status: Stable
+    summary: This specification describes service endpoints, resources and operations as well as details of requests
+      and responses that interacts with System openEHR API in a RESTful manner.
+    url: https://specifications.openehr.org/releases/ITS-REST/Release-1.1.0/system.html
+  - id: ehr
+    title: EHR REST API
+    status: Stable
+    summary: This specification describes service endpoints, resources, functions and operations as well as details
+      of requests and responses that interacts with an openEHR EHR API in a RESTful manner.
+    url: https://specifications.openehr.org/releases/ITS-REST/Release-1.1.0/ehr.html
+  - id: query
+    title: Query REST API
+    status: Stable
+    summary: This specification describes service endpoints, resources, functions and operations as well as details
+      of requests and responses that interacts with an openEHR Query API in a RESTful manner.
+    url: https://specifications.openehr.org/releases/ITS-REST/Release-1.1.0/query.html
+  - id: definition
+    title: Definition REST API
+    status: Stable
+    summary: This specification describes service endpoints, resources, functions and operations as well as details
+      of requests and responses that interacts with the openEHR Definition API in a RESTful manner. Definitions
+      includes Archetypes, Templates and Operational Templates (OPTs).
+    url: https://specifications.openehr.org/releases/ITS-REST/Release-1.1.0/definition.html
+  - id: demographic
+    title: Demographic REST API
+    status: Development
+    summary: This specification describes service endpoints, resources, functions and operations as well as details
+      of requests and responses that interacts with an openEHR Demographic API in a RESTful manner.
+    url: https://specifications.openehr.org/releases/ITS-REST/Release-1.1.0/demographic.html
+  - id: admin
+    title: Admin REST API
+    status: Development
+    summary: This specification describes service endpoints, resources, functions and operations as well as details
+      of requests and responses that interacts with an openEHR Admin API in a RESTful manner.
+    url: https://specifications.openehr.org/releases/ITS-REST/Release-1.1.0/admin.html
+  - id: simplified_formats
+    title: Simplified Formats for openEHR Data
+    status: Stable
+    summary: Simplified Formats (flat, structured) for serialization of openEHR Data.
+    url: https://specifications.openehr.org/releases/ITS-REST/Release-1.1.0/simplified_formats.html
+  - id: smart_app_launch
+    title: SMART on openEHR (SMART)
+    status: Development
+    summary: openEHR SMART App Launch and Service Discovery Framework.
+    url: https://specifications.openehr.org/releases/ITS-REST/Release-1.1.0/smart_app_launch.html
+  - id: REST_OAS_files
+    title: REST API OpenAPI files
+    status: Trial
+    summary: The openEHR REST API specifications as OpenAPI Specification v3.0 files in YAML format.
+    url: https://specifications.openehr.orghttps://github.com/openEHR/specifications-ITS-REST/tree/master/computable/OAS
+- id: ITS-XML
+  title: XML Schemas
+  description: openEHR XML Schemas (XSDs)
+  status: Stable
+  latest_release: Release-2.0.0
+  specifications:
+  - id: ITS-XML-AM
+    title: AM 1.4 XML Schemas (XSDs)
+    status: Trial
+    summary: AM component, Release 1.4 (including OPT) XML Schemas (XSDs) for use with openEHR systems and tools.
+    url: https://specifications.openehr.org/releases/ITS-XML/Release-2.0.0/components/AM/Release-1.4/
+  - id: ITS-XML-AM2
+    title: AM 2 XML Schemas (XSDs)
+    status: Trial
+    summary: AM component, Release 2 XML Schemas (XSDs) for use with openEHR systems and tools.
+    url: https://specifications.openehr.org/releases/ITS-XML/Release-2.0.0/components/AM/latest/
+  - id: ITS-XML-BASE
+    title: BASE XML Schemas (XSDs)
+    status: Trial
+    summary: BASE component XML Schemas (XSDs) for use with openEHR systems and tools.
+    url: https://specifications.openehr.org/releases/ITS-XML/Release-2.0.0/components/BASE/
+  - id: ITS-XML-RM
+    title: RM XML Schemas (XSDs)
+    status: Trial
+    summary: RM component XML Schemas (XSDs) for use with openEHR systems and tools.
+    url: https://specifications.openehr.org/releases/ITS-XML/Release-2.0.0/components/RM/
+  - id: ITS-XML-OET
+    title: OET XML Schemas (XSDs)
+    status: Trial
+    summary: XML Schemas (XSDs) for .oet Template files
+    url: https://specifications.openehr.org/releases/ITS-XML/Release-2.0.0/components/OET/
+  - id: ITS-XML-QUERY
+    title: QUERY XML Schemas (XSDs)
+    status: Trial
+    summary: XML Schemas (XSDs) for AQL Query
+    url: https://specifications.openehr.org/releases/ITS-XML/Release-2.0.0/components/QUERY/
+  - id: ITS-XML-v1
+    title: All v1 XML Schemas (XSDs)
+    status: Stable
+    summary: All XML Schemas (XSDs) Release 1.0.2 (stable)
+    url: https://specifications.openehr.orghttps://specifications.openehr.org/releases/ITS-XML/Release-1.0.2/components/ALL
+- id: LANG
+  title: Generic Languages
+  description: openEHR Languages Component
+  status: Stable
+  latest_release: Release-1.0.0
+  specifications:
+  - id: odin
+    title: Object Data Instance Notation (ODIN)
+    status: Stable
+    summary: This is the JSON-like notation used to express various sections of ADL archetypes including description,
+      terminology and annotations, and also BMM files.
+    url: https://specifications.openehr.org/releases/LANG/Release-1.0.0/odin.html
+  - id: bmm
+    title: Basic Meta-Model (BMM)
+    status: Stable
+    summary: BMM provides a human- and machine-readable / writable format for defining object models. It can be
+      considered a much more compact and readable alternative to XMI. This is the v2.x form in use by current tooling
+      (ADL Workbench, Archetype Designer, Archie, LinkEHR).
+    url: https://specifications.openehr.org/releases/LANG/Release-1.0.0/bmm.html
+  - id: bmm3
+    title: Basic Meta-Model (BMM) v3 developments
+    status: Paused
+    summary: The v3 evolution of BMM, extending the meta-model with an expression and statement meta-model. Development
+      is paused; the v2.x BMM remains the form implemented by current tooling.
+    url: https://specifications.openehr.org/releases/LANG/Release-1.0.0/bmm3.html
+  - id: bmm_persistence
+    title: BMM Persistence Model and Syntax
+    status: Stable
+    summary: A human-readable and machine-processable save format for BMM.
+    url: https://specifications.openehr.org/releases/LANG/Release-1.0.0/bmm_persistence.html
+  - id: BEL
+    title: Basic Expression Language (BEL)
+    status: Stable
+    summary: The openEHR Basic Expression Language defines a basic model and syntax for specifying expressions and
+      statements for use in archetype rules.
+    url: https://specifications.openehr.org/releases/LANG/Release-1.0.0/BEL.html
+  - id: EL
+    title: Expression Language (EL)
+    status: Development
+    summary: The openEHR Expression Language defines an advanced object / functional syntax for specifying expressions
+      for use elsewhere in openEHR, e.g. Task Planning, guidelines, rules etc.
+    url: https://specifications.openehr.org/releases/LANG/Release-1.0.0/EL.html
+- id: PROC
+  title: Process Model
+  description: openEHR Process Model Component
+  status: Paused
+  latest_release: Release-1.7.0
+  specifications:
+  - id: overview
+    title: CDS, Guidelines and Planning Overview
+    status: Paused
+    summary: Overview of openEHR CDS, Guidelines and Planning specifications.
+    url: https://specifications.openehr.org/releases/PROC/Release-1.7.0/overview.html
+  - id: task_planning
+    title: Task Planning (TP) Specification
+    status: Paused
+    summary: A major extension to the openEHR EHR specifications that defines a formal model for Task Plans and
+      clinical workflow.
+    url: https://specifications.openehr.org/releases/PROC/Release-1.7.0/task_planning.html
+  - id: decision_language
+    title: Decision Language specification
+    status: Paused
+    summary: Language for expressing rules and guidelines, for use with GDL3, Task Planning (TP).
+    url: https://specifications.openehr.org/releases/PROC/Release-1.7.0/decision_language.html
+  - id: tp_vml
+    title: Task Planning Visual Modelling Language (TP-VML)
+    status: Paused
+    summary: Task Planning Visual Modelling Language - a visual modelling language for Task Planning.
+    url: https://specifications.openehr.org/releases/PROC/Release-1.7.0/tp_vml.html
+  - id: process_examples
+    title: openEHR CDS, Guidelines and Planning Examples
+    status: Paused
+    summary: Real world examples of openEHR CDS, Guideline and Planning artefacts.
+    url: https://specifications.openehr.org/releases/PROC/Release-1.7.0/process_examples.html
+- id: QUERY
+  title: Query Languages
+  description: Query Languages Component
+  status: Stable
+  latest_release: Release-1.1.0
+  specifications:
+  - id: AQL
+    title: Archetype Query Language (AQL)
+    status: Stable
+    summary: Query language based on archetype paths and pattern matching.
+    url: https://specifications.openehr.org/releases/QUERY/Release-1.1.0/AQL.html
+  - id: AQL_examples
+    title: Archetype Query Language Examples
+    status: Development
+    summary: Examples of AQL use.
+    url: https://specifications.openehr.org/releases/QUERY/Release-1.1.0/AQL_examples.html
+- id: RM
+  title: Reference Model
+  description: openEHR Reference Model Component
+  status: Stable
+  latest_release: Release-1.1.0
+  specifications:
+  - id: ehr
+    title: EHR Information Model
+    status: Stable
+    summary: The information model of the openEHR EHR.
+    url: https://specifications.openehr.org/releases/RM/Release-1.1.0/ehr.html
+  - id: demographic
+    title: Demographic Information Model
+    status: Stable
+    summary: The openEHR demographics information model.
+    url: https://specifications.openehr.org/releases/RM/Release-1.1.0/demographic.html
+  - id: common
+    title: Common Information Model
+    status: Stable
+    summary: Information model containing common concepts, including the archetype-enabling `LOCATABLE` class, party
+      references, audits and attestations, change control, and authored resources.
+    url: https://specifications.openehr.org/releases/RM/Release-1.1.0/common.html
+  - id: data_structures
+    title: Data Structures Information Model
+    status: Stable
+    summary: Information model of data structures, including a powerful model of time-series data.
+    url: https://specifications.openehr.org/releases/RM/Release-1.1.0/data_structures.html
+  - id: data_types
+    title: Data Types Information Model
+    status: Stable
+    summary: Information model of data types, including quantities, date/times, plain and coded text, time specification,
+      multimedia and URIs.
+    url: https://specifications.openehr.org/releases/RM/Release-1.1.0/data_types.html
+  - id: support
+    title: Support Information Model
+    status: Stable
+    summary: Support model defining identifiers, assumed types, and terminology interface specification used in
+      the rest of the IMs.
+    url: https://specifications.openehr.org/releases/RM/Release-1.1.0/support.html
+  - id: integration
+    title: Integration Information Model
+    status: Stable
+    summary: Information model for representing legacy data is a free-form Entry type for implementing integration
+      solutions.
+    url: https://specifications.openehr.org/releases/RM/Release-1.1.0/integration.html
+  - id: ehr_extract
+    title: EHR Extract Information Model
+    status: Stable
+    summary: The information model of the EHR Extract, which is a serialisation of content from an EHR.
+    url: https://specifications.openehr.org/releases/RM/Release-1.1.0/ehr_extract.html
+- id: SM
+  title: Service Model
+  description: openEHR Service Model Component
+  status: Development
+  latest_release: development
+  specifications:
+  - id: openehr_platform
+    title: openEHR Platform Service Model
+    status: Trial
+    summary: Definition of the openEHR coarse-grained interface EHR service interface.
+    url: https://specifications.openehr.org/releases/SM/development/openehr_platform.html
+  - id: simplified_im_b
+    title: openEHR Simplified Information Model 'B'
+    status: Development
+    summary: Simplified Information Model 'B' - simplified version of RM for use with JSON Data Templates (JDTs).
+    url: https://specifications.openehr.org/releases/SM/development/simplified_im_b.html
+  - id: serial_data_formats
+    title: openEHR Serial Data Formats (SDF)
+    status: Development
+    summary: Serial data formats for use in REST and other contexts
+    url: https://specifications.openehr.org/releases/SM/development/serial_data_formats.html
+- id: TERM
+  title: openEHR Terminology
+  description: openEHR Terminology Component
+  status: Stable
+  latest_release: Release-3.0.0
+  specifications:
+  - id: SupportTerminology
+    title: Support Terminology specification
+    status: Stable
+    summary: Documentary form of the openEHR terminology, which is a set of vocabularies and code sets used by RM,
+      AM and SM.
+    url: https://specifications.openehr.org/releases/TERM/Release-3.0.0/SupportTerminology.html
+  - id: en_openehr_terminology.xml
+    title: openEHR Terminology (en)
+    status: Stable
+    summary: The openEHR Terminology XML file (in English language).
+    url: https://specifications.openehr.org/releases/TERM/Release-3.0.0/computable/XML/en/openehr_terminology.xml
+  - id: openehr_external_terminologies.xml
+    title: External terminologies
+    status: Stable
+    summary: The file containing external terminologies (e.g. Countries ISO 3166, Languages ISO 639-1, Media types
+      IANA, etc) used by RM, AM and SM.
+    url: https://specifications.openehr.org/releases/TERM/Release-3.0.0/computable/XML/openehr_external_terminologies.xml
+  - id: PropertyUnitData.xml
+    title: PropertyUnitData.xml
+    status: Stable
+    summary: The file containing UCUM related Properties and Units used by ADL-tools.
+    url: https://specifications.openehr.org/releases/TERM/Release-3.0.0/computable/XML/PropertyUnitData.xml

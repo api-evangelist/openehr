@@ -1,0 +1,457 @@
+generated: '2026-09-02'
+method: derived
+source: derived from openehr/people/openehr-people.yml
+type: Companies
+note: Organizations named as an employer beside a person on an openEHR roster page. This is the participation
+  graph, NOT a membership list — openEHR publishes Industry Partner and Organisation Partner tiers separately
+  and those are not harvested here.
+summary:
+  companies: 34
+  with_governance_seat: 34
+  single_participant: 33
+  top_by_participants:
+  - name: Nedap Healthcare
+    participants: 2
+  - name: University Hospital Basel
+    participants: 2
+  - name: ADOC Software Development
+    participants: 1
+  - name: Aston University
+    participants: 1
+  - name: Atomica Informatics
+    participants: 1
+  - name: Better
+    participants: 1
+  - name: CaboLabs
+    participants: 1
+  - name: Cambio Healthcare Systems
+    participants: 1
+  in_network: 0
+  missing: 34
+  api_providers_in_network: 0
+  governance_seat_in_network: 0
+  matched: '2026-09-02'
+companies:
+- name: Nedap Healthcare
+  key: nedap
+  participants: 3
+  governance_seats: 3
+  bodies:
+  - Specification Program (SEC)
+  - Clinical Program Board (CPB)
+  leadership_roles: null
+  suggested_slug: nedap-healthcare
+  aliases:
+  - Nedap
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: University Hospital Basel
+  key: university-hospital-basel
+  participants: 2
+  governance_seats: 2
+  bodies:
+  - Clinical Program Board (CPB)
+  leadership_roles: null
+  suggested_slug: university-hospital-basel
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: ADOC Software Development
+  key: adoc-software-development
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  leadership_roles: null
+  suggested_slug: adoc-software-development
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: Aston University
+  key: aston-university
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Clinical Program Board (CPB)
+  leadership_roles: null
+  suggested_slug: aston-university
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: Atomica Informatics
+  key: atomica-informatics
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Clinical Program Board (CPB)
+  leadership_roles: null
+  suggested_slug: atomica-informatics
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: Better
+  key: better
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  leadership_roles: null
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+  suggested_slug: better
+- name: CaboLabs
+  key: cabolabs
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  leadership_roles: null
+  suggested_slug: cabolabs
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: Cambio Healthcare Systems
+  key: cambio-healthcare-systems
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  leadership_roles:
+  - Rong Chen — Co-Chair
+  suggested_slug: cambio-healthcare-systems
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: CatSalut
+  key: catsalut
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - CIC Board
+  - Specification Program (SEC)
+  leadership_roles: null
+  suggested_slug: catsalut
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: Catalan Health
+  key: catalan-health
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Clinical Program Board (CPB)
+  leadership_roles: null
+  suggested_slug: catalan-health
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: Code24 BV
+  key: code24-bv
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  leadership_roles:
+  - Sebastian Iancu — Co-Chair
+  suggested_slug: code24-bv
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: DIPS asa
+  key: dips-asa
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  leadership_roles: null
+  suggested_slug: dips-asa
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: EHRbase
+  key: ehrbase
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  leadership_roles: null
+  suggested_slug: ehrbase
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: Global eHealth Collaborative (GEHCO)
+  key: global-ehealth-collaborative-gehco
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Education Program Board (EPB)
+  leadership_roles:
+  - Heather Grain — Co-Chair
+  suggested_slug: global-ehealth-collaborative-gehco
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: GraphiteHealth
+  key: graphitehealth
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - openEHR Foundation Board
+  - Specification Program (SEC)
+  leadership_roles: null
+  suggested_slug: graphitehealth
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: HIGHmed Consortium
+  key: highmed-consortium
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  leadership_roles: null
+  suggested_slug: highmed-consortium
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: Helse Vest ITK
+  key: helse-vest-itk
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Clinical Program Board (CPB)
+  leadership_roles: null
+  suggested_slug: helse-vest-itk
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: Kyoto University
+  key: kyoto-university
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  leadership_roles: null
+  suggested_slug: kyoto-university
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: Linköping University
+  key: link-ping-university
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  leadership_roles: null
+  suggested_slug: link-ping-university
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: Luxembourg Institute of Health
+  key: luxembourg-institute-of-health
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Clinical Program Board (CPB)
+  leadership_roles:
+  - Vanessa Pereira — Co-Chair
+  suggested_slug: luxembourg-institute-of-health
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: Marand
+  key: marand
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  leadership_roles:
+  - Bostjan Lah — Co-Chair
+  suggested_slug: marand
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: Medblocks
+  key: medblocks
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  leadership_roles: null
+  suggested_slug: medblocks
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: NHS Scotland National Digital Platform
+  key: nhs-scotland-national-digital-platform
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Clinical Program Board (CPB)
+  leadership_roles:
+  - Paul Miller — Co-Chair
+  suggested_slug: nhs-scotland-national-digital-platform
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: Ocean Health Systems
+  key: ocean-health-systems
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  - Clinical Program Board (CPB)
+  leadership_roles: null
+  suggested_slug: ocean-health-systems
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: Ocean Informatics UK
+  key: ocean-informatics-uk
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  leadership_roles: null
+  suggested_slug: ocean-informatics-uk
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: Oslo University Hospital
+  key: oslo-university-hospital
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Clinical Program Board (CPB)
+  leadership_roles: null
+  suggested_slug: oslo-university-hospital
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: Peter L. Reichertz Institute for Medical Informatics
+  key: peter-l-reichertz-institute-for-medical-informatics
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  leadership_roles: null
+  suggested_slug: peter-l-reichertz-institute-for-medical-informatics
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: Rosaldo Oy
+  key: rosaldo-oy
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Education Program Board (EPB)
+  leadership_roles:
+  - Hanna Pohjonen — Co-Chair
+  suggested_slug: rosaldo-oy
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: The Clinician
+  key: the-clinician
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Clinical Program Board (CPB)
+  leadership_roles: null
+  suggested_slug: the-clinician
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: UiT The Arctic University of Norway
+  key: uit-the-arctic-university-of-norway
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Education Program Board (EPB)
+  leadership_roles: null
+  suggested_slug: uit-the-arctic-university-of-norway
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: VeraTech for Health
+  key: veratech-for-health
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Education Program Board (EPB)
+  leadership_roles: null
+  suggested_slug: veratech-for-health
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: openEHR International
+  key: openehr-international
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - openEHR International (CIC)
+  - CIC Board
+  leadership_roles:
+  - Jordi Piera-Jiménez — CEO; Organisation representative
+  suggested_slug: openehr-international
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: openFHIR
+  key: openfhir
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  leadership_roles: null
+  suggested_slug: openfhir
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null
+- name: vitagroup
+  key: vitagroup
+  participants: 1
+  governance_seats: 1
+  bodies:
+  - Specification Program (SEC)
+  leadership_roles: null
+  suggested_slug: vitagroup
+  slug: null
+  in_network: false
+  is_api_provider: null
+  matched_by: null

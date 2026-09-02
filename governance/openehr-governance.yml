@@ -1,0 +1,100 @@
+generated: '2026-09-02'
+method: searched
+source: https://openehr.org/governance/
+type: standards-governance
+note: >-
+  openEHR is governed by TWO UK legal entities and the split is the thing to understand. The openEHR
+  Foundation, a not-for-profit company limited by guarantee regulated under the UK Companies Acts 1985
+  and 1989, holds the intellectual property and appoints two directors to the operating company. The
+  openEHR Community Interest Company, which trades as openEHR International and is regulated by the
+  Companies (Audit, Investigations and Community Enterprise) Act 2004, has run day-to-day operations
+  since 10 May 2019. The Foundation is expected to merge into openEHR International. Unlike OGC, the
+  working surface here is public: every program board roster is on the open web with names, roles and
+  employers, and the specification work happens in a public GitHub org and a public Discourse forum.
+  That is why this repo can name 59 people where the OGC profile could name only staff.
+entities:
+- name: openEHR Foundation
+  form: UK not-for-profit company limited by guarantee
+  regulation: UK Companies Acts 1985 and 1989
+  role: Holds the openEHR intellectual property; appoints two directors to the CIC.
+  status: Expected to merge into openEHR International.
+  chair: Sam Heard
+- name: openEHR International
+  form: openEHR Community Interest Company (CIC), UK member-owned not-for-profit
+  regulation: Companies (Audit, Investigations and Community Enterprise) Act 2004
+  role: Runs day-to-day operations of openEHR since 10 May 2019.
+  operational_since: '2019-05-10'
+  ceo: Jordi Piera-Jiménez
+bodies:
+- name: CIC Board
+  role: >-
+    Governs openEHR International. Two directors are appointed by the openEHR Foundation and up to six
+    are elected by subscribing members, across individual, professional, organisation, industry and
+    expert representative seats.
+  roster_public: true
+  seats: 10
+  co_chairs:
+  - Tomaž Gornik
+  - Jordi Piera-Jiménez
+  source: https://openehr.org/governance/
+- name: openEHR Foundation Board
+  role: Custodian of the intellectual property; appoints two of its members to the CIC Board.
+  roster_public: true
+  seats: 7
+  chair: Sam Heard
+  source: https://openehr.org/governance/
+- name: Specification Program (SEC)
+  role: >-
+    The Specifications Editorial Committee — writes and edits every openEHR specification, owns the
+    release process, and is the body named as `info.contact` inside the published OpenAPI documents.
+  roster_public: true
+  seats: 29
+  co_chairs:
+  - Rong Chen
+  - Sebastian Iancu
+  - Bostjan Lah
+  source: https://openehr.org/specification-program/
+- name: Clinical Program Board (CPB)
+  role: >-
+    Governs the clinical content — the archetypes and templates in the Clinical Knowledge Manager —
+    through a Clinical Models Editorial Group. This is the body that has no analogue in a
+    developer-led standard, and it is where openEHR's two-level modelling actually gets its second level.
+  roster_public: true
+  seats: 17
+  co_chairs:
+  - Paul Miller
+  - Vanessa Pereira
+  source: https://openehr.org/clinical-program-board/
+- name: Education Program Board (EPB)
+  role: Defines roles and skills for openEHR practitioners and runs the educator recognition program.
+  roster_public: true
+  seats: 6
+  co_chairs:
+  - Heather Grain
+  - Hanna Pohjonen
+  source: https://openehr.org/education-program/
+licensing:
+  specifications: Creative Commons Attribution-NoDerivs 3.0 Unported (CC BY-ND 3.0)
+  specifications_evidence: >-
+    Declared in `info.license` of every published ITS-REST OpenAPI document, harvested 2026-09-02.
+  implementation_code: Apache-2.0 on the specification and tooling repositories (specifications-ITS-REST,
+    specifications-ITS-BMM, specifications-ITS-XML, archie, bmm-publisher, adl-antlr, openEHR-antlr4).
+  note: >-
+    The specifications are free to retrieve and free to implement, but ND means a modified redistribution
+    of a specification document is not permitted. Free access and open licensing are not the same thing
+    and this is a case where they diverge — schema_access is open, the licence is not.
+membership_tiers:
+- Professional Members
+- Industry Partners
+- Organisation Partners
+- Affiliates
+community:
+  forum: https://discourse.openehr.org/
+  clinical_registry: https://ckm.openehr.org/ckm/
+  github_org: https://github.com/openEHR
+gaps:
+- No public meeting minutes location was found on openehr.org for any of the four program boards.
+- >-
+    No formal conformance or certification programme was found. The CNF (Conformance Specifications)
+    component exists but is in Development status, so there is no certification mark to check an
+    implementer against — which is the single biggest difference from OGC's CITE programme.

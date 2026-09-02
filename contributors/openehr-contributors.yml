@@ -1,0 +1,704 @@
+generated: '2026-09-02'
+method: searched
+source: https://github.com/openEHR
+type: Contributors
+organization: openEHR
+summary:
+  contributors: 119
+  repositories_checked: 48
+  total_contributions: 19207
+contributors:
+- github_id: ClinicalKnowledgeManager
+  contributions: 6194
+  repositories:
+  - CKM-mirror
+  - apperta-uk-ckm-mirror
+  repository_count: 2
+- github_id: wolandscat
+  contributions: 2670
+  repositories:
+  - TP-examples
+  - UML-adoc-exporter
+  - adl-antlr
+  - adl-archetypes
+  - adl-tools
+  - archie
+  - asciidoctor-stylesheet-factory
+  - clinical-models-template
+  - java-model-stack
+  - odin
+  - openEHR-antlr4
+  - openehr-uml-tools
+  - reference-models
+  - simplified-format-incubator
+  - spec-publish-asciidoc
+  - specifications-AA_GLOBAL
+  - specifications-AM
+  - specifications-BASE
+  - specifications-CDS
+  - specifications-CNF
+  - specifications-INTG
+  - specifications-ITS
+  - specifications-ITS-BMM
+  - specifications-ITS-JSON
+  - specifications-ITS-REST
+  - specifications-ITS-XML
+  - specifications-LANG
+  - specifications-PROC
+  - specifications-QUERY
+  - specifications-RM
+  - specifications-SM
+  - specifications-TERM
+  - specifications-UML
+  repository_count: 33
+- github_id: pieterbos
+  contributions: 1551
+  repositories:
+  - adl-antlr
+  - archie
+  - openEHR-antlr4
+  - specifications-ITS-BMM
+  - specifications-ITS-JSON
+  - specifications-RM
+  repository_count: 6
+- github_id: sebastian-iancu
+  contributions: 1503
+  repositories:
+  - ai-plugins
+  - asciidoctor-stylesheet-factory
+  - bmm-publisher
+  - specifications-AA_GLOBAL
+  - specifications-AM
+  - specifications-BASE
+  - specifications-CDS
+  - specifications-CNF
+  - specifications-ITS
+  - specifications-ITS-BMM
+  - specifications-ITS-JSON
+  - specifications-ITS-REST
+  - specifications-ITS-XML
+  - specifications-LANG
+  - specifications-PROC
+  - specifications-QUERY
+  - specifications-RM
+  - specifications-SM
+  - specifications-TERM
+  repository_count: 19
+- github_id: rashmidamu
+  contributions: 910
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: LindbergT
+  contributions: 699
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: KalliamvakosKon
+  contributions: 533
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: MaryamRazavi
+  contributions: 511
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: rongchen
+  contributions: 481
+  repositories:
+  - gdl-guideline-models
+  - gdl-tools
+  - java-libs
+  - specifications-CDS
+  repository_count: 4
+- github_id: isabellerickardson
+  contributions: 371
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: jimaxe
+  contributions: 336
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: unspection
+  contributions: 269
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: isabellejensen
+  contributions: 248
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: mojavelinux
+  contributions: 205
+  repositories:
+  - asciidoctor-stylesheet-factory
+  repository_count: 1
+- github_id: Sy33da
+  contributions: 189
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: Hemiho
+  contributions: 170
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: markopi
+  contributions: 168
+  repositories:
+  - adl2-core
+  - archie
+  - java-libs
+  repository_count: 3
+- github_id: J3173
+  contributions: 152
+  repositories:
+  - archie
+  - bmm-publisher
+  repository_count: 2
+- github_id: MattijsK
+  contributions: 146
+  repositories:
+  - archie
+  repository_count: 1
+- github_id: ErikSundvall
+  contributions: 143
+  repositories:
+  - CKM-mirror
+  - Sandbox
+  - java-libs
+  - specifications-ITS-REST
+  - specifications-LANG
+  - specifications-PROC
+  - specifications-RM
+  repository_count: 7
+- github_id: ShwetaGhaisas
+  contributions: 125
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: bjornna
+  contributions: 113
+  repositories:
+  - TP-examples
+  - adl2-core
+  - gdl-guideline-models
+  - java-libs
+  - reference-models
+  - specifications-ITS-REST
+  - specifications-QUERY
+  repository_count: 7
+- github_id: LindaGutt
+  contributions: 104
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: KevinArjona
+  contributions: 102
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: eneimi
+  contributions: 99
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: gardes
+  contributions: 75
+  repositories:
+  - java-libs
+  - specifications-AM
+  repository_count: 2
+- github_id: Woooderson
+  contributions: 73
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: ozoamo
+  contributions: 62
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: VeraPrinsen
+  contributions: 58
+  repositories:
+  - archie
+  repository_count: 1
+- github_id: umgohar
+  contributions: 58
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: auliazahrina
+  contributions: 57
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: ppazos
+  contributions: 53
+  repositories:
+  - java-libs
+  - specifications-CNF
+  - specifications-ITS-REST
+  - specifications-QUERY
+  - specifications-RM
+  repository_count: 5
+- github_id: winnerng
+  contributions: 52
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: danielkesz
+  contributions: 47
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: bostjanl
+  contributions: 41
+  repositories:
+  - specifications-CDS
+  - specifications-ITS-REST
+  repository_count: 2
+- github_id: joostholslag
+  contributions: 39
+  repositories:
+  - archie
+  - specifications-AA_GLOBAL
+  - specifications-AM
+  - specifications-BASE
+  - specifications-ITS-JSON
+  - specifications-ITS-REST
+  - specifications-QUERY
+  - specifications-RM
+  repository_count: 8
+- github_id: EBrader
+  contributions: 37
+  repositories:
+  - archie
+  repository_count: 1
+- github_id: Jacksonhieghts
+  contributions: 35
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: stefanspiska
+  contributions: 32
+  repositories:
+  - archie
+  repository_count: 1
+- github_id: steijgeler
+  contributions: 30
+  repositories:
+  - archie
+  repository_count: 1
+- github_id: ricardofago
+  contributions: 27
+  repositories:
+  - openEHR-TDD2canonical
+  repository_count: 1
+- github_id: tanja-de-jong
+  contributions: 21
+  repositories:
+  - archie
+  repository_count: 1
+- github_id: dennisforslund1
+  contributions: 21
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: icorbal
+  contributions: 20
+  repositories:
+  - java-libs
+  repository_count: 1
+- github_id: pacharanero
+  contributions: 19
+  repositories:
+  - affiliate-website-html-template
+  - developer.openehr.org
+  - openehr.org-django-site-static-archive
+  repository_count: 3
+- github_id: mathijshudepohl
+  contributions: 19
+  repositories:
+  - archie
+  repository_count: 1
+- github_id: bostjanl-better
+  contributions: 18
+  repositories:
+  - specifications-AM
+  - specifications-BASE
+  repository_count: 2
+- github_id: siljelb
+  contributions: 18
+  repositories:
+  - specifications-TERM
+  repository_count: 1
+- github_id: cnanjo
+  contributions: 17
+  repositories:
+  - archie
+  - java-model-stack
+  - openehr-uml-tools
+  repository_count: 3
+- github_id: JeroenBrinkman
+  contributions: 16
+  repositories:
+  - archie
+  repository_count: 1
+- github_id: nrguez
+  contributions: 16
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: GustafHultgren
+  contributions: 15
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: BWHoeben
+  contributions: 13
+  repositories:
+  - archie
+  repository_count: 1
+- github_id: teunvanhemert
+  contributions: 13
+  repositories:
+  - specifications-QUERY
+  repository_count: 1
+- github_id: munagh
+  contributions: 12
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: chevalleyc
+  contributions: 10
+  repositories:
+  - archie
+  repository_count: 1
+- github_id: David-N-Perkins
+  contributions: 10
+  repositories:
+  - archie
+  repository_count: 1
+- github_id: BertVerhees
+  contributions: 10
+  repositories:
+  - archie
+  - java-libs
+  repository_count: 2
+- github_id: rosarioss
+  contributions: 10
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: mfendukly
+  contributions: 9
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: HSaleh-2021
+  contributions: 8
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: joanavicente
+  contributions: 8
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: maxinegh
+  contributions: 8
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: sidharthramesh
+  contributions: 8
+  repositories:
+  - specifications-AA_GLOBAL
+  - specifications-ITS-REST
+  repository_count: 2
+- github_id: sumunardimas
+  contributions: 7
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: Nerovizle
+  contributions: 7
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: appwinner
+  contributions: 6
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: jmewes
+  contributions: 6
+  repositories:
+  - specifications-BASE
+  - specifications-RM
+  repository_count: 2
+- github_id: jakesmolka
+  contributions: 5
+  repositories:
+  - archie
+  repository_count: 1
+- github_id: hsnaves
+  contributions: 5
+  repositories:
+  - java-libs
+  repository_count: 1
+- github_id: JoshuaForssmanNedap
+  contributions: 4
+  repositories:
+  - archie
+  repository_count: 1
+- github_id: subigre
+  contributions: 4
+  repositories:
+  - archie
+  repository_count: 1
+- github_id: jpleppers
+  contributions: 4
+  repositories:
+  - archie
+  repository_count: 1
+- github_id: freshehr
+  contributions: 4
+  repositories:
+  - CKM-mirror
+  - specifications-AM
+  - specifications-RM
+  repository_count: 3
+- github_id: heathfrankel
+  contributions: 4
+  repositories:
+  - specifications-ITS-REST
+  repository_count: 1
+- github_id: EdwardvanRaak
+  contributions: 3
+  repositories:
+  - archie
+  repository_count: 1
+- github_id: elham2222
+  contributions: 3
+  repositories:
+  - CKM-mirror
+  repository_count: 1
+- github_id: kristofferlundberg
+  contributions: 3
+  repositories:
+  - CKM-mirror
+  - reference-models
+  repository_count: 2
+- github_id: manuel-palacio
+  contributions: 3
+  repositories:
+  - gdl-tools
+  repository_count: 1
+- github_id: skoba
+  contributions: 3
+  repositories:
+  - odin
+  - specifications-TERM
+  repository_count: 2
+- github_id: yampeku
+  contributions: 3
+  repositories:
+  - specifications-TERM
+  repository_count: 1
+- github_id: boeckers
+  contributions: 2
+  repositories:
+  - archie
+  repository_count: 1
+- github_id: cmoulliard
+  contributions: 2
+  repositories:
+  - asciidoctor-stylesheet-factory
+  repository_count: 1
+- github_id: leif81
+  contributions: 2
+  repositories:
+  - asciidoctor-stylesheet-factory
+  repository_count: 1
+- github_id: rubentalstra
+  contributions: 2
+  repositories:
+  - developer.openehr.org
+  repository_count: 1
+- github_id: Phyo88
+  contributions: 2
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: ckodin
+  contributions: 2
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: mforss
+  contributions: 2
+  repositories:
+  - java-libs
+  repository_count: 1
+- github_id: linforestzhang
+  contributions: 2
+  repositories:
+  - specifications-TERM
+  repository_count: 1
+- github_id: cemadmin
+  contributions: 1
+  repositories:
+  - adl-tools
+  repository_count: 1
+- github_id: petergummer
+  contributions: 1
+  repositories:
+  - adl-tools
+  repository_count: 1
+- github_id: bobvanderlinden
+  contributions: 1
+  repositories:
+  - archie
+  repository_count: 1
+- github_id: josepedrocorreia
+  contributions: 1
+  repositories:
+  - archie
+  repository_count: 1
+- github_id: samigvnc
+  contributions: 1
+  repositories:
+  - archie
+  repository_count: 1
+- github_id: jelmerterwal
+  contributions: 1
+  repositories:
+  - archie
+  repository_count: 1
+- github_id: jaredmorgs
+  contributions: 1
+  repositories:
+  - asciidoctor-stylesheet-factory
+  repository_count: 1
+- github_id: nhr
+  contributions: 1
+  repositories:
+  - asciidoctor-stylesheet-factory
+  repository_count: 1
+- github_id: neilccbrown
+  contributions: 1
+  repositories:
+  - asciidoctor-stylesheet-factory
+  repository_count: 1
+- github_id: stephenhay
+  contributions: 1
+  repositories:
+  - asciidoctor-stylesheet-factory
+  repository_count: 1
+- github_id: youribonnaffe
+  contributions: 1
+  repositories:
+  - asciidoctor-stylesheet-factory
+  repository_count: 1
+- github_id: bk2204
+  contributions: 1
+  repositories:
+  - asciidoctor-stylesheet-factory
+  repository_count: 1
+- github_id: borutjures
+  contributions: 1
+  repositories:
+  - developer.openehr.org
+  repository_count: 1
+- github_id: platzhersh
+  contributions: 1
+  repositories:
+  - developer.openehr.org
+  repository_count: 1
+- github_id: gasperr
+  contributions: 1
+  repositories:
+  - developer.openehr.org
+  repository_count: 1
+- github_id: clarotech
+  contributions: 1
+  repositories:
+  - developer.openehr.org
+  repository_count: 1
+- github_id: sasurfer
+  contributions: 1
+  repositories:
+  - developer.openehr.org
+  repository_count: 1
+- github_id: Divya040393
+  contributions: 1
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: vincerivas
+  contributions: 1
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: zotop
+  contributions: 1
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: MarBoth
+  contributions: 1
+  repositories:
+  - gdl-guideline-models
+  repository_count: 1
+- github_id: gufo
+  contributions: 1
+  repositories:
+  - gdl-tools
+  repository_count: 1
+- github_id: samuelfrade
+  contributions: 1
+  repositories:
+  - java-libs
+  repository_count: 1
+- github_id: Gjoll
+  contributions: 1
+  repositories:
+  - java-model-stack
+  repository_count: 1
+- github_id: MadMatt04
+  contributions: 1
+  repositories:
+  - specifications-ITS-BMM
+  repository_count: 1
+- github_id: SevKohler
+  contributions: 1
+  repositories:
+  - specifications-ITS-REST
+  repository_count: 1
+- github_id: serefarikan
+  contributions: 1
+  repositories:
+  - specifications-ITS-REST
+  repository_count: 1
+- github_id: nr23730
+  contributions: 1
+  repositories:
+  - specifications-QUERY
+  repository_count: 1
+- github_id: cmoesel
+  contributions: 1
+  repositories:
+  - specifications-RM
+  repository_count: 1
+- github_id: bradlittleton
+  contributions: 1
+  repositories:
+  - specifications-TERM
+  repository_count: 1

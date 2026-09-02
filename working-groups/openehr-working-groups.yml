@@ -1,0 +1,56 @@
+generated: '2026-09-02'
+method: searched
+source:
+- https://openehr.org/specification-program/
+- https://openehr.org/clinical-program-board/
+- https://openehr.org/education-program/
+- https://openehr.org/governance/
+type: WorkingGroups
+note: openEHR calls these PROGRAMS, not working groups. There is no per-specification working group the way CAMARA
+  charters one repo per API or OGC charters an SWG per standard — the Specification Program owns all fourteen specification
+  components at once. That is a smaller, more centralised drafting structure than either, and it is worth reading
+  against the 68 specifications it maintains.
+summary:
+  programs: 4
+  people: 59
+working_groups:
+- name: Specification Program (SEC)
+  seats: 29
+  scope: Writes and edits all openEHR specifications; owns the release process.
+  outputs:
+  - BASE
+  - RM
+  - AM
+  - QUERY
+  - TERM
+  - CDS
+  - PROC
+  - SM
+  - CNF
+  - LANG
+  - ITS-REST
+  - ITS-JSON
+  - ITS-XML
+  - ITS-BMM
+  url: https://openehr.org/specification-program/
+- name: Clinical Program Board (CPB)
+  seats: 17
+  scope: Governs clinical content — archetypes and templates — through a Clinical Models Editorial Group.
+  outputs:
+  - Clinical Knowledge Manager archetypes
+  - Clinical Knowledge Manager templates
+  url: https://openehr.org/clinical-program-board/
+- name: Education Program Board (EPB)
+  seats: 6
+  scope: Roles and skills definition for openEHR practitioners; educator recognition program.
+  outputs:
+  - Educator Recognition Program
+  url: https://openehr.org/education-program/
+- name: Governance (CIC Board + Foundation Board)
+  seats: 17
+  scope: Corporate governance of openEHR International and custody of the IP by the openEHR Foundation.
+  outputs:
+  - Charter and organisational structure
+  - Code of Conduct
+  - Licensing policy
+  url: https://openehr.org/governance/

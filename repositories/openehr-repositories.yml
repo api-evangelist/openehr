@@ -1,0 +1,681 @@
+generated: '2026-09-02'
+method: searched
+source: https://github.com/openEHR
+type: Repositories
+organization: openEHR
+summary:
+  total: 52
+  archived: 4
+  by_maturity:
+    unclassified: 52
+repositories:
+- name: adl-antlr
+  url: https://github.com/openEHR/adl-antlr
+  description: Antrl4 grammars for ADL
+  maturity: unclassified
+  stars: 3
+  forks: 5
+  open_issues: 12
+  archived: false
+  created: '2015-10-06'
+  updated: '2024-04-06'
+  license: Apache-2.0
+  topics:
+  - tools
+- name: adl-archetypes
+  url: https://github.com/openEHR/adl-archetypes
+  description: ADL test, reference and example archetypes
+  maturity: unclassified
+  stars: 7
+  forks: 13
+  open_issues: 4
+  archived: false
+  created: '2012-10-21'
+  updated: '2025-06-27'
+  license: null
+  topics: []
+- name: adl-resources
+  url: https://github.com/openEHR/adl-resources
+  description: Archetype-related technical resources, e.g. compiler error definitions, icons, etc
+  maturity: unclassified
+  stars: 1
+  forks: 0
+  open_issues: 0
+  archived: false
+  created: '2014-01-25'
+  updated: '2015-02-20'
+  license: Apache-2.0
+  topics: []
+- name: adl-tools
+  url: https://github.com/openEHR/adl-tools
+  description: openEHR ADL Workbench tool
+  maturity: unclassified
+  stars: 24
+  forks: 17
+  open_issues: 13
+  archived: false
+  created: '2012-10-20'
+  updated: '2026-04-10'
+  license: NOASSERTION
+  topics:
+  - tools
+- name: adl2-core
+  url: https://github.com/openEHR/adl2-core
+  description: ADL / AOM 2 (previously known as '1.5') core libs and parser
+  maturity: unclassified
+  stars: 6
+  forks: 8
+  open_issues: 4
+  archived: false
+  created: '2014-10-03'
+  updated: '2020-02-11'
+  license: AGPL-3.0
+  topics: []
+- name: affiliate-website-html-template
+  url: https://github.com/openEHR/affiliate-website-html-template
+  description: a Template to help Affiliates with their web presence
+  maturity: unclassified
+  stars: 0
+  forks: 0
+  open_issues: 0
+  archived: false
+  created: '2026-03-13'
+  updated: '2026-03-13'
+  license: null
+  topics: []
+- name: ai-plugins
+  url: https://github.com/openEHR/ai-plugins
+  description: AI plugins for openEHR - specification authoring, review and governance skills. Claude
+    Code marketplace.
+  maturity: unclassified
+  stars: 3
+  forks: 0
+  open_issues: 0
+  archived: false
+  created: '2026-06-04'
+  updated: '2026-06-05'
+  license: Apache-2.0
+  topics:
+  - agentic-ai
+  - claude-code
+  - claude-plugin
+  - claude-skills
+  - plugins
+- name: apperta-uk-ckm-mirror
+  url: https://github.com/openEHR/apperta-uk-ckm-mirror
+  description: Mirror of the content of the (now defunct) Apperta UK CKM (ckm.apperta.org)
+  maturity: unclassified
+  stars: 0
+  forks: 0
+  open_issues: 0
+  archived: false
+  created: '2025-09-02'
+  updated: '2024-05-21'
+  license: null
+  topics: []
+- name: arch_ed-dotnet
+  url: https://github.com/openEHR/arch_ed-dotnet
+  description: Original 'Ocean' Archetype Editor, written in VB.Net / with ADL workbench parser DLL
+  maturity: unclassified
+  stars: 13
+  forks: 13
+  open_issues: 2
+  archived: true
+  created: '2013-03-20'
+  updated: '2015-10-01'
+  license: null
+  topics: []
+- name: archie
+  url: https://github.com/openEHR/archie
+  description: OpenEHR library implementing ADL 2, AOM 2, BMM, RM 1.0.4 and many tools
+  maturity: unclassified
+  stars: 69
+  forks: 30
+  open_issues: 79
+  archived: false
+  created: '2017-11-02'
+  updated: '2026-08-31'
+  license: Apache-2.0
+  topics:
+  - tools
+- name: asciidoctor-stylesheet-factory
+  url: https://github.com/openEHR/asciidoctor-stylesheet-factory
+  description: ':art: A factory for producing stylesheets to theme AsciiDoc HTML5 output. Assembled using
+    Compass, Sass and Foundation.'
+  maturity: unclassified
+  stars: 0
+  forks: 0
+  open_issues: 0
+  archived: false
+  created: '2015-12-10'
+  updated: '2022-01-08'
+  license: NOASSERTION
+  topics: []
+- name: bmm-publisher
+  url: https://github.com/openEHR/bmm-publisher
+  description: PHP tool that reads openEHR BMM schemas and publishes class definitions as AsciiDoc, PlantUML,
+    and YAML for the openEHR specifications website.
+  maturity: unclassified
+  stars: 1
+  forks: 1
+  open_issues: 6
+  archived: false
+  created: '2026-04-06'
+  updated: '2026-08-01'
+  license: Apache-2.0
+  topics:
+  - asciidoc
+  - bmm
+  - openehr
+- name: bmm-uml
+  url: https://github.com/openEHR/bmm-uml
+  description: UML to BMM converter
+  maturity: unclassified
+  stars: 2
+  forks: 0
+  open_issues: 0
+  archived: true
+  created: '2014-07-25'
+  updated: '2015-10-21'
+  license: CC-BY-SA-4.0
+  topics: []
+- name: CKM-mirror
+  url: https://github.com/openEHR/CKM-mirror
+  description: openEHR.org CKM mirror
+  maturity: unclassified
+  stars: 57
+  forks: 59
+  open_issues: 0
+  archived: false
+  created: '2012-07-23'
+  updated: '2026-09-02'
+  license: NOASSERTION
+  topics:
+  - openehr-knowledge-resources
+- name: clinical-models-template
+  url: https://github.com/openEHR/clinical-models-template
+  description: Template repository showing how to set up Git for local + remote archetypes
+  maturity: unclassified
+  stars: 0
+  forks: 1
+  open_issues: 0
+  archived: false
+  created: '2015-08-07'
+  updated: '2015-08-07'
+  license: null
+  topics: []
+- name: developer.openehr.org
+  url: https://github.com/openEHR/developer.openehr.org
+  description: Developer guidance for implementing and conforming to openEHR.
+  maturity: unclassified
+  stars: 6
+  forks: 6
+  open_issues: 1
+  archived: false
+  created: '2026-08-20'
+  updated: '2026-09-01'
+  license: NOASSERTION
+  topics: []
+- name: downloads
+  url: https://github.com/openEHR/downloads
+  description: openEHR Tool downloads for various platforms.
+  maturity: unclassified
+  stars: 10
+  forks: 6
+  open_issues: 0
+  archived: false
+  created: '2012-12-13'
+  updated: '2024-01-18'
+  license: null
+  topics: []
+- name: gdl-guideline-models
+  url: https://github.com/openEHR/gdl-guideline-models
+  description: Common clinical models in the forms of openEHR archetypes and GDL guidelines
+  maturity: unclassified
+  stars: 44
+  forks: 23
+  open_issues: 0
+  archived: false
+  created: '2021-12-10'
+  updated: '2026-09-01'
+  license: Apache-2.0
+  topics: []
+- name: gdl-tools
+  url: https://github.com/openEHR/gdl-tools
+  description: Guideline Description Language tools
+  maturity: unclassified
+  stars: 22
+  forks: 17
+  open_issues: 1
+  archived: false
+  created: '2013-02-18'
+  updated: '2019-01-22'
+  license: NOASSERTION
+  topics: []
+- name: java-libs
+  url: https://github.com/openEHR/java-libs
+  description: Standard Java libraries for Java implementations of openEHR
+  maturity: unclassified
+  stars: 53
+  forks: 60
+  open_issues: 40
+  archived: false
+  created: '2013-01-02'
+  updated: '2024-10-03'
+  license: NOASSERTION
+  topics: []
+- name: java-model-stack
+  url: https://github.com/openEHR/java-model-stack
+  description: 'Java language openEHR modelling formalisms stack: ODIN, BMM, AOM, ADL'
+  maturity: unclassified
+  stars: 2
+  forks: 1
+  open_issues: 0
+  archived: false
+  created: '2017-08-18'
+  updated: '2017-10-25'
+  license: Apache-2.0
+  topics: []
+- name: odin
+  url: https://github.com/openEHR/odin
+  description: Object Data Instance Notation project
+  maturity: unclassified
+  stars: 7
+  forks: 4
+  open_issues: 1
+  archived: false
+  created: '2013-04-20'
+  updated: '2021-01-22'
+  license: null
+  topics: []
+- name: openEHR-antlr4
+  url: https://github.com/openEHR/openEHR-antlr4
+  description: Antlr grammars, test files and Java libs.
+  maturity: unclassified
+  stars: 4
+  forks: 0
+  open_issues: 1
+  archived: false
+  created: '2021-07-15'
+  updated: '2025-12-15'
+  license: Apache-2.0
+  topics: []
+- name: openEHR-TDD2canonical
+  url: https://github.com/openEHR/openEHR-TDD2canonical
+  description: openEHR TDD to canonical composition converter
+  maturity: unclassified
+  stars: 1
+  forks: 1
+  open_issues: 2
+  archived: false
+  created: '2019-10-11'
+  updated: '2021-12-14'
+  license: Apache-2.0
+  topics:
+  - java
+  - openehr
+  - xml
+- name: openehr-uml-tools
+  url: https://github.com/openEHR/openehr-uml-tools
+  description: Tools for converting between the various openEHR and UML / XMI formalisms.
+  maturity: unclassified
+  stars: 1
+  forks: 0
+  open_issues: 0
+  archived: false
+  created: '2017-08-28'
+  updated: '2017-12-15'
+  license: Apache-2.0
+  topics: []
+- name: openehr.org-django-site-static-archive
+  url: https://github.com/openEHR/openehr.org-django-site-static-archive
+  description: A static HTML archive of the Django website taken on 24.01.2025
+  maturity: unclassified
+  stars: 1
+  forks: 0
+  open_issues: 0
+  archived: false
+  created: '2025-01-24'
+  updated: '2026-02-09'
+  license: null
+  topics: []
+- name: reference-models
+  url: https://github.com/openEHR/reference-models
+  description: openEHR and related reference models in computable form, including UML, XMI, BMM, Ecore,
+    etc
+  maturity: unclassified
+  stars: 20
+  forks: 19
+  open_issues: 3
+  archived: false
+  created: '2012-10-21'
+  updated: '2019-09-21'
+  license: null
+  topics: []
+- name: Sandbox
+  url: https://github.com/openEHR/Sandbox
+  description: A space to test Git/github features, feel free to "fork" files and play around...
+  maturity: unclassified
+  stars: 6
+  forks: 9
+  open_issues: 0
+  archived: false
+  created: '2012-07-11'
+  updated: '2024-01-12'
+  license: null
+  topics: []
+- name: simplified-format-incubator
+  url: https://github.com/openEHR/simplified-format-incubator
+  description: Incubator for resources describing so-called 'simplified data formats' including TDS, flat
+    JSON etc.
+  maturity: unclassified
+  stars: 0
+  forks: 0
+  open_issues: 0
+  archived: false
+  created: '2019-07-05'
+  updated: '2019-07-05'
+  license: Apache-2.0
+  topics: []
+- name: spec-publish-asciidoc
+  url: https://github.com/openEHR/spec-publish-asciidoc
+  description: Specification publishing using Asciidoc
+  maturity: unclassified
+  stars: 4
+  forks: 2
+  open_issues: 6
+  archived: false
+  created: '2015-06-17'
+  updated: '2019-02-22'
+  license: Apache-2.0
+  topics: []
+- name: specifications
+  url: https://github.com/openEHR/specifications
+  description: openEHR specifications (old)
+  maturity: unclassified
+  stars: 11
+  forks: 4
+  open_issues: 0
+  archived: true
+  created: '2012-11-21'
+  updated: '2018-11-29'
+  license: null
+  topics: []
+- name: specifications-AA_GLOBAL
+  url: https://github.com/openEHR/specifications-AA_GLOBAL
+  description: Global definitions and documents for openEHR
+  maturity: unclassified
+  stars: 2
+  forks: 3
+  open_issues: 0
+  archived: false
+  created: '2018-11-12'
+  updated: '2026-07-14'
+  license: NOASSERTION
+  topics: []
+- name: specifications-AM
+  url: https://github.com/openEHR/specifications-AM
+  description: openEHR Archetype Model specifications
+  maturity: unclassified
+  stars: 8
+  forks: 5
+  open_issues: 6
+  archived: false
+  created: '2015-06-24'
+  updated: '2026-06-01'
+  license: NOASSERTION
+  topics:
+  - specifications
+- name: specifications-BASE
+  url: https://github.com/openEHR/specifications-BASE
+  description: openEHR general specifications and resources.
+  maturity: unclassified
+  stars: 10
+  forks: 11
+  open_issues: 8
+  archived: false
+  created: '2015-07-18'
+  updated: '2026-07-25'
+  license: NOASSERTION
+  topics:
+  - specifications
+- name: specifications-CDS
+  url: https://github.com/openEHR/specifications-CDS
+  description: openEHR Clinical Decision Support and related specifications
+  maturity: unclassified
+  stars: 3
+  forks: 5
+  open_issues: 0
+  archived: false
+  created: '2015-07-29'
+  updated: '2026-05-04'
+  license: NOASSERTION
+  topics: []
+- name: specifications-CNF
+  url: https://github.com/openEHR/specifications-CNF
+  description: openEHR Conformance specifications
+  maturity: unclassified
+  stars: 2
+  forks: 2
+  open_issues: 3
+  archived: false
+  created: '2017-07-29'
+  updated: '2026-05-04'
+  license: NOASSERTION
+  topics: []
+- name: specifications-INTG
+  url: https://github.com/openEHR/specifications-INTG
+  description: openEHR integration related specifications
+  maturity: unclassified
+  stars: 1
+  forks: 0
+  open_issues: 0
+  archived: false
+  created: '2016-02-29'
+  updated: '2016-02-29'
+  license: NOASSERTION
+  topics: []
+- name: specifications-ITS
+  url: https://github.com/openEHR/specifications-ITS
+  description: Implementation technology specifications
+  maturity: unclassified
+  stars: 1
+  forks: 0
+  open_issues: 0
+  archived: false
+  created: '2018-11-14'
+  updated: '2021-05-03'
+  license: Apache-2.0
+  topics: []
+- name: specifications-ITS-BMM
+  url: https://github.com/openEHR/specifications-ITS-BMM
+  description: BMM schemas for use with openEHR systems and tools
+  maturity: unclassified
+  stars: 7
+  forks: 6
+  open_issues: 1
+  archived: false
+  created: '2018-11-09'
+  updated: '2026-06-05'
+  license: Apache-2.0
+  topics:
+  - bmm
+  - openehr
+  - schema
+- name: specifications-ITS-JSON
+  url: https://github.com/openEHR/specifications-ITS-JSON
+  description: JSON-Schema Specifications
+  maturity: unclassified
+  stars: 9
+  forks: 6
+  open_issues: 6
+  archived: false
+  created: '2018-11-14'
+  updated: '2022-12-12'
+  license: Apache-2.0
+  topics:
+  - json
+  - json-schema
+  - openehr
+- name: specifications-ITS-REST
+  url: https://github.com/openEHR/specifications-ITS-REST
+  description: openEHR REST API Specifications
+  maturity: unclassified
+  stars: 21
+  forks: 18
+  open_issues: 7
+  archived: false
+  created: '2015-08-13'
+  updated: '2026-07-19'
+  license: Apache-2.0
+  topics:
+  - api
+  - api-documentation
+  - ehr
+  - openapi
+  - openapi3
+  - openehr
+  - rest
+  - rest-api
+  - specification
+- name: specifications-ITS-XML
+  url: https://github.com/openEHR/specifications-ITS-XML
+  description: XML schema for use with openEHR systems and tools
+  maturity: unclassified
+  stars: 3
+  forks: 4
+  open_issues: 4
+  archived: false
+  created: '2018-11-08'
+  updated: '2024-03-04'
+  license: Apache-2.0
+  topics:
+  - openehr
+  - xml
+  - xml-schema
+  - xsd
+  - xsd-schema
+- name: specifications-LANG
+  url: https://github.com/openEHR/specifications-LANG
+  description: Specifications for generic modelling and other languages
+  maturity: unclassified
+  stars: 0
+  forks: 1
+  open_issues: 0
+  archived: false
+  created: '2018-11-09'
+  updated: '2026-06-01'
+  license: NOASSERTION
+  topics: []
+- name: specifications-PROC
+  url: https://github.com/openEHR/specifications-PROC
+  description: openEHR Process model
+  maturity: unclassified
+  stars: 4
+  forks: 3
+  open_issues: 0
+  archived: false
+  created: '2017-10-05'
+  updated: '2026-05-04'
+  license: NOASSERTION
+  topics: []
+- name: specifications-QUERY
+  url: https://github.com/openEHR/specifications-QUERY
+  description: openEHR AQL and related query specifications.
+  maturity: unclassified
+  stars: 2
+  forks: 1
+  open_issues: 2
+  archived: false
+  created: '2015-07-27'
+  updated: '2026-05-04'
+  license: NOASSERTION
+  topics:
+  - aql
+  - openehr
+- name: specifications-RM
+  url: https://github.com/openEHR/specifications-RM
+  description: openEHR specifications - Reference Model
+  maturity: unclassified
+  stars: 8
+  forks: 10
+  open_issues: 6
+  archived: false
+  created: '2015-07-11'
+  updated: '2026-07-24'
+  license: NOASSERTION
+  topics: []
+- name: specifications-SM
+  url: https://github.com/openEHR/specifications-SM
+  description: openEHR Service Model specifications
+  maturity: unclassified
+  stars: 0
+  forks: 2
+  open_issues: 0
+  archived: false
+  created: '2015-06-03'
+  updated: '2026-05-04'
+  license: NOASSERTION
+  topics: []
+- name: specifications-TERM
+  url: https://github.com/openEHR/specifications-TERM
+  description: openEHR terminology-related specifications
+  maturity: unclassified
+  stars: 7
+  forks: 10
+  open_issues: 3
+  archived: false
+  created: '2015-12-01'
+  updated: '2026-07-06'
+  license: NOASSERTION
+  topics: []
+- name: specifications-UML
+  url: https://github.com/openEHR/specifications-UML
+  description: Global openEHR UML site (generated)
+  maturity: unclassified
+  stars: 6
+  forks: 3
+  open_issues: 0
+  archived: false
+  created: '2019-01-05'
+  updated: '2023-02-14'
+  license: NOASSERTION
+  topics: []
+- name: terminology
+  url: https://github.com/openEHR/terminology
+  description: openEHR reference model terminology, and artefacts for binding or using standard terminologies.
+  maturity: unclassified
+  stars: 10
+  forks: 10
+  open_issues: 0
+  archived: true
+  created: '2012-12-30'
+  updated: '2022-11-23'
+  license: null
+  topics: []
+- name: TP-examples
+  url: https://github.com/openEHR/TP-examples
+  description: This repository contains examples and test cases for the Task Planning specification and
+    tools.
+  maturity: unclassified
+  stars: 3
+  forks: 1
+  open_issues: 0
+  archived: false
+  created: '2017-10-13'
+  updated: '2019-04-23'
+  license: NOASSERTION
+  topics:
+  - openehr
+- name: UML-adoc-exporter
+  url: https://github.com/openEHR/UML-adoc-exporter
+  description: UML AsciiDoctor .adoc format class and diagram exporter
+  maturity: unclassified
+  stars: 0
+  forks: 0
+  open_issues: 0
+  archived: false
+  created: '2020-02-09'
+  updated: '2025-05-27'
+  license: Apache-2.0
+  topics: []

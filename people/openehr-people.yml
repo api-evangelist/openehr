@@ -1,0 +1,633 @@
+generated: '2026-09-02'
+method: searched
+source:
+- https://openehr.org/governance/
+- https://openehr.org/specification-program/
+- https://openehr.org/clinical-program-board/
+- https://openehr.org/education-program/
+type: People
+note: 'Hand-transcribed from the four openEHR roster pages. The automated roster extractor does not fit openEHR''s
+  page layouts — it returned headings and code-of-conduct prose as people — so every row here was read off the source
+  page instead. Employers are recorded only where the page states one; a blank org is a page that gave no employer,
+  never a guess. github_id is null throughout: openEHR publishes no handle alongside any roster name, and the join
+  to contributors/ has not been made.'
+summary:
+  people: 59
+  with_org: 37
+  with_github_id: 0
+  in_governance_bodies: 59
+  on_multiple_bodies: 10
+  bodies:
+    Specification Program (SEC): 29
+    Clinical Program Board (CPB): 17
+    openEHR Foundation Board: 7
+    Education Program Board (EPB): 6
+    CIC Board: 10
+    openEHR International (CIC): 1
+people:
+- name: Alexandru Vidrean
+  org: EHRbase
+  github_id: null
+  role: Member
+  title: Developer; Product Owner
+  body: Specification Program (SEC)
+  bodies:
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/specification-program/
+- name: Andjela Pavlovic
+  org: null
+  github_id: null
+  role: Member
+  title: Medical professional; formerly Business Analyst at Better
+  body: Clinical Program Board (CPB)
+  bodies:
+  - Clinical Program Board (CPB)
+  sources:
+  - https://openehr.org/clinical-program-board/
+- name: Birger Haarbrandt
+  org: Peter L. Reichertz Institute for Medical Informatics
+  github_id: null
+  role: Member
+  title: Software architect
+  body: Specification Program (SEC)
+  bodies:
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/specification-program/
+- name: Bjørn Næss
+  org: null
+  github_id: null
+  role: Member
+  title: Implementation specialist
+  body: Specification Program (SEC)
+  bodies:
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/specification-program/
+- name: Borut Jures
+  org: null
+  github_id: null
+  role: Member
+  title: Software architect and implementer
+  body: Specification Program (SEC)
+  bodies:
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/specification-program/
+- name: Bostjan Lah
+  org: Marand
+  github_id: null
+  role: Co-Chair
+  title: Lead developer
+  body: Specification Program (SEC)
+  bodies:
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/specification-program/
+- name: Christian Chevalley
+  org: ADOC Software Development
+  github_id: null
+  role: Member
+  title: R&D manager
+  body: Specification Program (SEC)
+  bodies:
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/specification-program/
+- name: Chunlan Ma
+  org: null
+  github_id: null
+  role: Member
+  title: Gynaecologist and obstetrician; software developer
+  body: Specification Program (SEC)
+  bodies:
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/specification-program/
+- name: David Ingram
+  org: null
+  github_id: null
+  role: Board member
+  title: Professor Emeritus
+  body: openEHR Foundation Board
+  bodies:
+  - openEHR Foundation Board
+  sources:
+  - https://openehr.org/governance/
+- name: David Moner
+  org: VeraTech for Health
+  github_id: null
+  role: Board member
+  title: CTO and consultant on semantic interoperability and eHealth standards
+  body: Education Program Board (EPB)
+  bodies:
+  - Education Program Board (EPB)
+  sources:
+  - https://openehr.org/education-program/
+- name: Diego Boscá Tomás
+  org: null
+  github_id: null
+  role: Member
+  title: Computer engineer, PhD
+  body: Specification Program (SEC)
+  bodies:
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/specification-program/
+- name: Erik Sundvall
+  org: Linköping University
+  github_id: null
+  role: Member
+  title: Researcher, PhD MSc
+  body: Specification Program (SEC)
+  bodies:
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/specification-program/
+- name: Gasper Andrejc
+  org: openFHIR
+  github_id: null
+  role: Member
+  title: Health IT professional; founder
+  body: Specification Program (SEC)
+  bodies:
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/specification-program/
+- name: Hanna Pohjonen
+  org: Rosaldo Oy
+  github_id: null
+  role: Co-Chair
+  title: Professor; healthcare IT consultant
+  body: Education Program Board (EPB)
+  bodies:
+  - Education Program Board (EPB)
+  sources:
+  - https://openehr.org/education-program/
+- name: Heather Grain
+  org: Global eHealth Collaborative (GEHCO)
+  github_id: null
+  role: Co-Chair
+  title: Consultant Terminologist, Data and EHR Implementation Specialist and Educator
+  body: Education Program Board (EPB)
+  bodies:
+  - Education Program Board (EPB)
+  sources:
+  - https://openehr.org/education-program/
+- name: Heather Leslie
+  org: Atomica Informatics
+  github_id: null
+  role: Member
+  title: Chief Clinical Information Officer; Principal
+  body: Clinical Program Board (CPB)
+  bodies:
+  - Clinical Program Board (CPB)
+  sources:
+  - https://openehr.org/clinical-program-board/
+- name: Heidi Koikkalainen
+  org: null
+  github_id: null
+  role: Member
+  title: Consultant and researcher in health informatics
+  body: Clinical Program Board (CPB)
+  bodies:
+  - Clinical Program Board (CPB)
+  sources:
+  - https://openehr.org/clinical-program-board/
+- name: Ian McNicoll
+  org: null
+  github_id: null
+  role: Foundation representative; Board member; Member
+  title: Former Scottish GP; independent consultant
+  body: CIC Board
+  bodies:
+  - CIC Board
+  - openEHR Foundation Board
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/governance/
+  - https://openehr.org/specification-program/
+- name: Jake Smolka
+  org: vitagroup
+  github_id: null
+  role: Member
+  title: Developer; integration specialist
+  body: Specification Program (SEC)
+  bodies:
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/specification-program/
+- name: Jan de Lange
+  org: null
+  github_id: null
+  role: Board member
+  title: Senior Marketing Professional
+  body: Education Program Board (EPB)
+  bodies:
+  - Education Program Board (EPB)
+  sources:
+  - https://openehr.org/education-program/
+- name: Jannis Pesch
+  org: University Hospital Basel
+  github_id: null
+  role: Member
+  title: Clinical modeler
+  body: Clinical Program Board (CPB)
+  bodies:
+  - Clinical Program Board (CPB)
+  sources:
+  - https://openehr.org/clinical-program-board/
+- name: Johan Gustav Bellika
+  org: UiT The Arctic University of Norway
+  github_id: null
+  role: Board member
+  title: Professor in Medical Informatics, Department of Clinical Medicine
+  body: Education Program Board (EPB)
+  bodies:
+  - Education Program Board (EPB)
+  sources:
+  - https://openehr.org/education-program/
+- name: John Meredith
+  org: null
+  github_id: null
+  role: Professional member representative; Board member
+  title: null
+  body: CIC Board
+  bodies:
+  - CIC Board
+  - openEHR Foundation Board
+  sources:
+  - https://openehr.org/governance/
+- name: John Tore Valand
+  org: Helse Vest ITK
+  github_id: null
+  role: Member
+  title: Senior Advisor
+  body: Clinical Program Board (CPB)
+  bodies:
+  - Clinical Program Board (CPB)
+  sources:
+  - https://openehr.org/clinical-program-board/
+- name: Jonathan Probets
+  org: null
+  github_id: null
+  role: Board member
+  title: Healthcare transformation, sales and strategic engagement
+  body: Education Program Board (EPB)
+  bodies:
+  - Education Program Board (EPB)
+  sources:
+  - https://openehr.org/education-program/
+- name: Joost Holslag
+  org: Nedap
+  github_id: null
+  role: Member
+  title: Clinical informatician
+  body: Specification Program (SEC)
+  bodies:
+  - Specification Program (SEC)
+  - Clinical Program Board (CPB)
+  sources:
+  - https://openehr.org/specification-program/
+  - https://openehr.org/clinical-program-board/
+- name: Jordi Piera-Jiménez
+  org: openEHR International
+  github_id: null
+  role: CEO; Organisation representative
+  title: null
+  body: openEHR International (CIC)
+  bodies:
+  - openEHR International (CIC)
+  - CIC Board
+  sources:
+  - https://openehr.org/governance/
+- name: Kanthan Theivendran
+  org: Aston University
+  github_id: null
+  role: Member
+  title: Consultant Orthopaedic Surgeon; Honorary Professor
+  body: Clinical Program Board (CPB)
+  bodies:
+  - Clinical Program Board (CPB)
+  sources:
+  - https://openehr.org/clinical-program-board/
+- name: Kjetil Jørgensen
+  org: DIPS asa
+  github_id: null
+  role: Member
+  title: Product owner
+  body: Specification Program (SEC)
+  bodies:
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/specification-program/
+- name: Koray Atalag
+  org: The Clinician
+  github_id: null
+  role: Member
+  title: Founder; Consultant at GALATA-Digital (MD, PhD)
+  body: Clinical Program Board (CPB)
+  bodies:
+  - Clinical Program Board (CPB)
+  sources:
+  - https://openehr.org/clinical-program-board/
+- name: Lars Fuhrmann
+  org: null
+  github_id: null
+  role: Member
+  title: Resident ophthalmologist
+  body: Clinical Program Board (CPB)
+  bodies:
+  - Clinical Program Board (CPB)
+  sources:
+  - https://openehr.org/clinical-program-board/
+- name: Luis Marco-Ruiz
+  org: HIGHmed Consortium
+  github_id: null
+  role: Member
+  title: Data engineer, PhD
+  body: Specification Program (SEC)
+  bodies:
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/specification-program/
+- name: Matija Polajnar
+  org: Better
+  github_id: null
+  role: Member
+  title: Software architect and developer
+  body: Specification Program (SEC)
+  bodies:
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/specification-program/
+- name: Mattijs Kuhlmann
+  org: Nedap Healthcare
+  github_id: null
+  role: Member
+  title: Software Developer
+  body: Specification Program (SEC)
+  bodies:
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/specification-program/
+- name: Mikael Nyström
+  org: null
+  github_id: null
+  role: Organisation representative; Board member
+  title: PhD
+  body: CIC Board
+  bodies:
+  - CIC Board
+  - openEHR Foundation Board
+  sources:
+  - https://openehr.org/governance/
+- name: Nils Hellrung
+  org: null
+  github_id: null
+  role: Industry representative
+  title: null
+  body: CIC Board
+  bodies:
+  - CIC Board
+  sources:
+  - https://openehr.org/governance/
+- name: Olha Nikolaieva
+  org: University Hospital Basel
+  github_id: null
+  role: Member
+  title: Clinical modeler
+  body: Clinical Program Board (CPB)
+  bodies:
+  - Clinical Program Board (CPB)
+  sources:
+  - https://openehr.org/clinical-program-board/
+- name: Pablo Pazos Gutierrez
+  org: CaboLabs
+  github_id: null
+  role: Member
+  title: Computer Engineer; founder
+  body: Specification Program (SEC)
+  bodies:
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/specification-program/
+- name: Paul Miller
+  org: NHS Scotland National Digital Platform
+  github_id: null
+  role: Co-Chair
+  title: General Practitioner and Clinical Informatician; clinical informatics lead
+  body: Clinical Program Board (CPB)
+  bodies:
+  - Clinical Program Board (CPB)
+  sources:
+  - https://openehr.org/clinical-program-board/
+- name: Pieter Bos
+  org: Nedap Healthcare
+  github_id: null
+  role: Member
+  title: Developer, MSc Computer Science
+  body: Specification Program (SEC)
+  bodies:
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/specification-program/
+- name: Rachel Fellner
+  org: null
+  github_id: null
+  role: Individual representative
+  title: null
+  body: CIC Board
+  bodies:
+  - CIC Board
+  sources:
+  - https://openehr.org/governance/
+- name: Renaud Subiger
+  org: null
+  github_id: null
+  role: Member
+  title: Solutions architect
+  body: Specification Program (SEC)
+  bodies:
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/specification-program/
+- name: Rong Chen
+  org: Cambio Healthcare Systems
+  github_id: null
+  role: Co-Chair
+  title: Chief Medical Informatics Officer and Head of the Medical Informatics Group
+  body: Specification Program (SEC)
+  bodies:
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/specification-program/
+- name: Sam Heard
+  org: null
+  github_id: null
+  role: Foundation representative; Chair
+  title: null
+  body: CIC Board
+  bodies:
+  - CIC Board
+  - openEHR Foundation Board
+  sources:
+  - https://openehr.org/governance/
+- name: Sebastian Garde
+  org: Ocean Health Systems
+  github_id: null
+  role: Member
+  title: Health Informatician; Product Lead
+  body: Specification Program (SEC)
+  bodies:
+  - Specification Program (SEC)
+  - Clinical Program Board (CPB)
+  sources:
+  - https://openehr.org/specification-program/
+  - https://openehr.org/clinical-program-board/
+- name: Sebastian Iancu
+  org: Code24 BV
+  github_id: null
+  role: Co-Chair
+  title: Lead software engineer
+  body: Specification Program (SEC)
+  bodies:
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/specification-program/
+- name: Seref Arikan
+  org: Ocean Informatics UK
+  github_id: null
+  role: Member
+  title: Software developer and technical lead
+  body: Specification Program (SEC)
+  bodies:
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/specification-program/
+- name: Severin Kohler
+  org: null
+  github_id: null
+  role: Member of the Specification Board
+  title: Health informatician
+  body: Specification Program (SEC)
+  bodies:
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/specification-program/
+- name: Shinji Kobayashi
+  org: Kyoto University
+  github_id: null
+  role: Member
+  title: Associate professor, EHR research unit
+  body: Specification Program (SEC)
+  bodies:
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/specification-program/
+- name: Sidharth Ramesh
+  org: Medblocks
+  github_id: null
+  role: Member
+  title: Doctor and developer; founder
+  body: Specification Program (SEC)
+  bodies:
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/specification-program/
+- name: Silje Ljosland Bakke
+  org: null
+  github_id: null
+  role: Member
+  title: Registered nurse and informatician, Norwegian hospital sector
+  body: Clinical Program Board (CPB)
+  bodies:
+  - Clinical Program Board (CPB)
+  sources:
+  - https://openehr.org/clinical-program-board/
+- name: Tara Bonet
+  org: Catalan Health
+  github_id: null
+  role: Member
+  title: Biomedical engineer
+  body: Clinical Program Board (CPB)
+  bodies:
+  - Clinical Program Board (CPB)
+  sources:
+  - https://openehr.org/clinical-program-board/
+- name: Thomas Beale
+  org: GraphiteHealth
+  github_id: null
+  role: Board member; Chief technical architect and editor of openEHR specifications
+  title: VP Informatics
+  body: openEHR Foundation Board
+  bodies:
+  - openEHR Foundation Board
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/governance/
+  - https://openehr.org/specification-program/
+- name: Thomas Webb
+  org: null
+  github_id: null
+  role: Expert representative
+  title: null
+  body: CIC Board
+  bodies:
+  - CIC Board
+  sources:
+  - https://openehr.org/governance/
+- name: Tomaž Gornik
+  org: null
+  github_id: null
+  role: Co-Chair; Board member
+  title: null
+  body: CIC Board
+  bodies:
+  - CIC Board
+  - openEHR Foundation Board
+  sources:
+  - https://openehr.org/governance/
+- name: Vanessa Pereira
+  org: Luxembourg Institute of Health
+  github_id: null
+  role: Co-Chair
+  title: Digital Health Engineer
+  body: Clinical Program Board (CPB)
+  bodies:
+  - Clinical Program Board (CPB)
+  sources:
+  - https://openehr.org/clinical-program-board/
+- name: Vebjørn Arntzen
+  org: Oslo University Hospital
+  github_id: null
+  role: Member
+  title: Registered nurse and informatician
+  body: Clinical Program Board (CPB)
+  bodies:
+  - Clinical Program Board (CPB)
+  sources:
+  - https://openehr.org/clinical-program-board/
+- name: Wouter Zanen
+  org: null
+  github_id: null
+  role: Member
+  title: IT Program Manager, hospital & healthcare industry
+  body: Clinical Program Board (CPB)
+  bodies:
+  - Clinical Program Board (CPB)
+  sources:
+  - https://openehr.org/clinical-program-board/
+- name: Xabier Michelena Vegas
+  org: CatSalut
+  github_id: null
+  role: Organisation representative; Member
+  title: Rheumatologist (MD, PhD); Clinical Informatics Lead
+  body: CIC Board
+  bodies:
+  - CIC Board
+  - Specification Program (SEC)
+  sources:
+  - https://openehr.org/governance/
+  - https://openehr.org/specification-program/
