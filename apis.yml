@@ -38,6 +38,22 @@ tags:
 - ADL
 - Clinical Modelling
 - Reference Model
+- Not-for-Profit
+tags_raw:
+- openEHR
+- Healthcare
+- EHR
+- Electronic Health Records
+- Health Informatics
+- Standards
+- Specification
+- Interoperability
+- Information Model
+- Archetypes
+- AQL
+- ADL
+- Clinical Modelling
+- Reference Model
 - Not-for-profit
 common:
 - type: AgenticAccess
@@ -93,120 +109,761 @@ common:
 - type: WorkingGroups
   url: https://openehr.org/programs/specification/board_members
 apis:
-- aid: openehr:ehr
-  name: openEHR EHR API
-  description: The core openEHR record API — create and manage EHRs, compositions, directories, contributions and
-    versioned objects. openEHR SPECIFICATION, not a callable service — 33 operation(s) across 23 path(s), served from
-    the templated host `https://{baseUrl}/v1`.
+- aid: openehr:openehr-adl1-4-api
+  name: openEHR ADL1.4 API
+  description: "Management of [AOM and ADL 1.4](https://specifications.openehr.org/releases/AM/latest)\
+    \ Operational Templates (OPTs). \nThese templates can be created using [modelling tools](https://www.openehr.org/downloads/modellingtools)\
+    \ such as the Template Designer and the Archetype Designer. \n\nOperational templates simplify the\
+    \ creation of openEHR-based input or storage implementations by, for a specific COMPOSITION template\
+    \ (use case), collecting all labels, requirements and constraints from all contained archetypes and\
+    \ sub-templates into a single easily parsed file. \nThis file can be a basis for UI-generation/creation\
+    \ and for data validation."
   humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
   tags:
-  - openEHR
-  - Healthcare
-  - EHR
-  - Specification
-  x-status: STABLE
+  - ADL1.4
   properties:
   - type: OpenAPI
-    url: openapi/openehr-ehr-openapi.yml
+    url: openapi/openehr-adl1-4-api-openapi.yml
   - type: Specification
     url: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
   - type: SourceCode
-    url: https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/ehr-validation.openapi.yaml
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/ehr-validation.openapi.yaml
   - type: JSONSchema
     url: json-schema/openehr-rm-1.1.0-all.json
   - type: JSONSchema
-    url: https://specifications.openehr.org/releases/ITS-JSON/latest/components/openehr_rm_1.1.0_all.json
-- aid: openehr:query
-  name: openEHR Query API
-  description: Execute stored and ad-hoc Archetype Query Language (AQL) queries against an openEHR system. openEHR
-    SPECIFICATION, not a callable service — 6 operation(s) across 3 path(s), served from the templated host `https://{baseUrl}/v1`.
-  humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/query.html
-  tags:
-  - openEHR
-  - Healthcare
-  - EHR
-  - Specification
-  x-status: STABLE
-  properties:
-  - type: OpenAPI
-    url: openapi/openehr-query-openapi.yml
+    url: >-
+      https://specifications.openehr.org/releases/ITS-JSON/latest/components/openehr_rm_1.1.0_all.json
   - type: Specification
     url: https://specifications.openehr.org/releases/ITS-REST/latest/query.html
   - type: SourceCode
-    url: https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/query-validation.openapi.yaml
-- aid: openehr:definition
-  name: openEHR Definition API
-  description: Manage the definition layer — ADL 1.4 and ADL 2 templates, operational templates and stored queries.
-    openEHR SPECIFICATION, not a callable service — 13 operation(s) across 9 path(s), served from the templated host
-    `https://{baseUrl}/v1`.
-  humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/definition.html
-  tags:
-  - openEHR
-  - Healthcare
-  - EHR
-  - Specification
-  x-status: STABLE
-  properties:
-  - type: OpenAPI
-    url: openapi/openehr-definition-openapi.yml
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/query-validation.openapi.yaml
   - type: Specification
     url: https://specifications.openehr.org/releases/ITS-REST/latest/definition.html
   - type: SourceCode
-    url: https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/definition-validation.openapi.yaml
-- aid: openehr:system
-  name: openEHR System API
-  description: System-level service endpoints for an openEHR server. openEHR SPECIFICATION, not a callable service
-    — 1 operation(s) across 1 path(s), served from the templated host `https://{baseUrl}/v1`.
-  humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/overview.html
-  tags:
-  - openEHR
-  - Healthcare
-  - EHR
-  - Specification
-  x-status: STABLE
-  properties:
-  - type: OpenAPI
-    url: openapi/openehr-system-openapi.yml
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/definition-validation.openapi.yaml
   - type: Specification
     url: https://specifications.openehr.org/releases/ITS-REST/latest/overview.html
   - type: SourceCode
-    url: https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/system-validation.openapi.yaml
-- aid: openehr:demographic
-  name: openEHR Demographic API
-  description: Party, role and demographic data handling. Published but marked DEVELOPMENT by openEHR. openEHR SPECIFICATION,
-    not a callable service — 42 operation(s) across 27 path(s), served from the templated host `https://{baseUrl}/v1`.
-  humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/demographic.html
-  tags:
-  - openEHR
-  - Healthcare
-  - EHR
-  - Specification
-  x-status: DEVELOPMENT
-  properties:
-  - type: OpenAPI
-    url: openapi/openehr-demographic-openapi.yml
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/system-validation.openapi.yaml
   - type: Specification
     url: https://specifications.openehr.org/releases/ITS-REST/latest/demographic.html
   - type: SourceCode
-    url: https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/demographic-validation.openapi.yaml
-- aid: openehr:admin
-  name: openEHR Admin API
-  description: Administrative operations over EHRs. Published but marked DEVELOPMENT by openEHR. openEHR SPECIFICATION,
-    not a callable service — 2 operation(s) across 2 path(s), served from the templated host `https://{baseUrl}/v1`.
-  humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/admin.html
-  tags:
-  - openEHR
-  - Healthcare
-  - EHR
-  - Specification
-  x-status: DEVELOPMENT
-  properties:
-  - type: OpenAPI
-    url: openapi/openehr-admin-openapi.yml
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/demographic-validation.openapi.yaml
   - type: Specification
     url: https://specifications.openehr.org/releases/ITS-REST/latest/admin.html
   - type: SourceCode
-    url: https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/admin-validation.openapi.yaml
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/admin-validation.openapi.yaml
+- aid: openehr:openehr-adl2-api
+  name: openEHR ADL2 API
+  description: >-
+    Management of [AOM2](https://specifications.openehr.org/releases/AM/latest/AOM2.html#_templates) templates.
+
+
+    See also [ADL2 Template specifications](https://specifications.openehr.org/releases/AM/latest/ADL2.html#_templates).
+  humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  tags:
+  - ADL2
+  properties:
+  - type: OpenAPI
+    url: openapi/openehr-adl2-api-openapi.yml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/ehr-validation.openapi.yaml
+  - type: JSONSchema
+    url: json-schema/openehr-rm-1.1.0-all.json
+  - type: JSONSchema
+    url: >-
+      https://specifications.openehr.org/releases/ITS-JSON/latest/components/openehr_rm_1.1.0_all.json
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/query.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/query-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/definition.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/definition-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/overview.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/system-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/demographic.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/demographic-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/admin.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/admin-validation.openapi.yaml
+- aid: openehr:openehr-agent-api
+  name: openEHR AGENT API
+  description: >-
+    Management of the [AGENT](https://specifications.openehr.org/releases/RM/latest/demographic.html#_agent_class)
+    class.
+  humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  tags:
+  - AGENT
+  properties:
+  - type: OpenAPI
+    url: openapi/openehr-agent-api-openapi.yml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/ehr-validation.openapi.yaml
+  - type: JSONSchema
+    url: json-schema/openehr-rm-1.1.0-all.json
+  - type: JSONSchema
+    url: >-
+      https://specifications.openehr.org/releases/ITS-JSON/latest/components/openehr_rm_1.1.0_all.json
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/query.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/query-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/definition.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/definition-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/overview.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/system-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/demographic.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/demographic-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/admin.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/admin-validation.openapi.yaml
+- aid: openehr:openehr-composition-api
+  name: openEHR COMPOSITION API
+  description: >-
+    Management of [COMPOSITION](https://specifications.openehr.org/releases/RM/latest/ehr.html#_composition_class)
+    and [VERSIONED_COMPOSITION](https://specifications.openehr.org/releases/RM/latest/ehr.html#_versioned_composition_class)
+    resources.
+
+
+    Operations include create, retrieve, update, delete of compositions, and access to their version containers,
+    specific versions and revision history.
+  humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  tags:
+  - COMPOSITION
+  properties:
+  - type: OpenAPI
+    url: openapi/openehr-composition-api-openapi.yml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/ehr-validation.openapi.yaml
+  - type: JSONSchema
+    url: json-schema/openehr-rm-1.1.0-all.json
+  - type: JSONSchema
+    url: >-
+      https://specifications.openehr.org/releases/ITS-JSON/latest/components/openehr_rm_1.1.0_all.json
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/query.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/query-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/definition.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/definition-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/overview.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/system-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/demographic.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/demographic-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/admin.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/admin-validation.openapi.yaml
+- aid: openehr:openehr-contribution-api
+  name: openEHR CONTRIBUTION API
+  description: >-
+    Management of [CONTRIBUTION](https://specifications.openehr.org/releases/RM/latest/common.html#_contribution_class)
+    class.
+  humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  tags:
+  - CONTRIBUTION
+  properties:
+  - type: OpenAPI
+    url: openapi/openehr-contribution-api-openapi.yml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/ehr-validation.openapi.yaml
+  - type: JSONSchema
+    url: json-schema/openehr-rm-1.1.0-all.json
+  - type: JSONSchema
+    url: >-
+      https://specifications.openehr.org/releases/ITS-JSON/latest/components/openehr_rm_1.1.0_all.json
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/query.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/query-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/definition.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/definition-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/overview.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/system-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/demographic.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/demographic-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/admin.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/admin-validation.openapi.yaml
+- aid: openehr:openehr-directory-api
+  name: openEHR DIRECTORY API
+  description: >-
+    Management of the [directory](https://specifications.openehr.org/releases/RM/latest/ehr.html#_directory)
+    [FOLDER](https://specifications.openehr.org/releases/RM/latest/common.html#_folder_class) resource.
+
+
+    Operations include create, update, delete and time/version-based retrieval of the EHR’s directory
+    structure.
+  humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  tags:
+  - DIRECTORY
+  properties:
+  - type: OpenAPI
+    url: openapi/openehr-directory-api-openapi.yml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/ehr-validation.openapi.yaml
+  - type: JSONSchema
+    url: json-schema/openehr-rm-1.1.0-all.json
+  - type: JSONSchema
+    url: >-
+      https://specifications.openehr.org/releases/ITS-JSON/latest/components/openehr_rm_1.1.0_all.json
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/query.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/query-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/definition.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/definition-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/overview.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/system-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/demographic.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/demographic-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/admin.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/admin-validation.openapi.yaml
+- aid: openehr:openehr-ehr-api
+  name: openEHR EHR API
+  description: >-
+    Admin management of [EHRs](https://specifications.openehr.org/releases/RM/latest/ehr.html#_ehr_class).
+  humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  tags:
+  - EHR
+  properties:
+  - type: OpenAPI
+    url: openapi/openehr-ehr-api-openapi.yml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/ehr-validation.openapi.yaml
+  - type: JSONSchema
+    url: json-schema/openehr-rm-1.1.0-all.json
+  - type: JSONSchema
+    url: >-
+      https://specifications.openehr.org/releases/ITS-JSON/latest/components/openehr_rm_1.1.0_all.json
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/query.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/query-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/definition.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/definition-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/overview.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/system-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/demographic.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/demographic-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/admin.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/admin-validation.openapi.yaml
+- aid: openehr:openehr-ehr-status-api
+  name: openEHR EHR STATUS API
+  description: >-
+    Management of [EHR_STATUS](https://specifications.openehr.org/releases/RM/latest/ehr.html#_ehr_status_class)
+    and [VERSIONED_EHR_STATUS](https://specifications.openehr.org/releases/RM/latest/ehr.html#_versioned_ehr_status_class)
+    resources.
+
+
+    Operations include retrieval by time or version, update, and inspection of revision history for the
+    versioned status of an EHR.
+  humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  tags:
+  - EHR_STATUS
+  properties:
+  - type: OpenAPI
+    url: openapi/openehr-ehr-status-api-openapi.yml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/ehr-validation.openapi.yaml
+  - type: JSONSchema
+    url: json-schema/openehr-rm-1.1.0-all.json
+  - type: JSONSchema
+    url: >-
+      https://specifications.openehr.org/releases/ITS-JSON/latest/components/openehr_rm_1.1.0_all.json
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/query.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/query-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/definition.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/definition-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/overview.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/system-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/demographic.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/demographic-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/admin.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/admin-validation.openapi.yaml
+- aid: openehr:openehr-group-api
+  name: openEHR GROUP API
+  description: >-
+    Management of the [GROUP](https://specifications.openehr.org/releases/RM/latest/demographic.html#_group_class)
+    class.
+  humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  tags:
+  - GROUP
+  properties:
+  - type: OpenAPI
+    url: openapi/openehr-group-api-openapi.yml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/ehr-validation.openapi.yaml
+  - type: JSONSchema
+    url: json-schema/openehr-rm-1.1.0-all.json
+  - type: JSONSchema
+    url: >-
+      https://specifications.openehr.org/releases/ITS-JSON/latest/components/openehr_rm_1.1.0_all.json
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/query.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/query-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/definition.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/definition-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/overview.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/system-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/demographic.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/demographic-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/admin.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/admin-validation.openapi.yaml
+- aid: openehr:openehr-item-tag-api
+  name: openEHR ITEM TAG API
+  description: >-
+    Management of [ITEM_TAG](https://specifications.openehr.org/releases/RM/development/common.html#_item_tag_class)
+    resources.
+  humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  tags:
+  - ITEM_TAG
+  properties:
+  - type: OpenAPI
+    url: openapi/openehr-item-tag-api-openapi.yml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/ehr-validation.openapi.yaml
+  - type: JSONSchema
+    url: json-schema/openehr-rm-1.1.0-all.json
+  - type: JSONSchema
+    url: >-
+      https://specifications.openehr.org/releases/ITS-JSON/latest/components/openehr_rm_1.1.0_all.json
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/query.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/query-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/definition.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/definition-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/overview.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/system-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/demographic.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/demographic-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/admin.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/admin-validation.openapi.yaml
+- aid: openehr:openehr-options-api
+  name: openEHR Options API
+  description: The Options API from openEHR — 1 operation(s) for options.
+  humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  tags:
+  - Options
+  properties:
+  - type: OpenAPI
+    url: openapi/openehr-options-api-openapi.yml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/ehr-validation.openapi.yaml
+  - type: JSONSchema
+    url: json-schema/openehr-rm-1.1.0-all.json
+  - type: JSONSchema
+    url: >-
+      https://specifications.openehr.org/releases/ITS-JSON/latest/components/openehr_rm_1.1.0_all.json
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/query.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/query-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/definition.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/definition-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/overview.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/system-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/demographic.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/demographic-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/admin.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/admin-validation.openapi.yaml
+- aid: openehr:openehr-organisation-api
+  name: openEHR ORGANISATION API
+  description: >-
+    Management of the [ORGANISATION](https://specifications.openehr.org/releases/RM/latest/demographic.html#_organisation_class)
+    class.
+  humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  tags:
+  - ORGANISATION
+  properties:
+  - type: OpenAPI
+    url: openapi/openehr-organisation-api-openapi.yml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/ehr-validation.openapi.yaml
+  - type: JSONSchema
+    url: json-schema/openehr-rm-1.1.0-all.json
+  - type: JSONSchema
+    url: >-
+      https://specifications.openehr.org/releases/ITS-JSON/latest/components/openehr_rm_1.1.0_all.json
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/query.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/query-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/definition.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/definition-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/overview.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/system-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/demographic.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/demographic-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/admin.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/admin-validation.openapi.yaml
+- aid: openehr:openehr-person-api
+  name: openEHR PERSON API
+  description: >-
+    Management of the [PERSON](https://specifications.openehr.org/releases/RM/latest/demographic.html#_person_class)
+    class.
+  humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  tags:
+  - PERSON
+  properties:
+  - type: OpenAPI
+    url: openapi/openehr-person-api-openapi.yml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/ehr-validation.openapi.yaml
+  - type: JSONSchema
+    url: json-schema/openehr-rm-1.1.0-all.json
+  - type: JSONSchema
+    url: >-
+      https://specifications.openehr.org/releases/ITS-JSON/latest/components/openehr_rm_1.1.0_all.json
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/query.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/query-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/definition.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/definition-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/overview.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/system-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/demographic.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/demographic-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/admin.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/admin-validation.openapi.yaml
+- aid: openehr:openehr-query-api
+  name: openEHR Query API
+  description: "Management of stored (registered) queries in the system, including creation of new versions\
+    \ and retrieval by qualified name and version. \n\nThese endpoints enable registration and lifecycle\
+    \ management of reusable queries available for later execution.    \n\nStored queries are identified\
+    \ by their [qualified name and version](query.html#tag/Qualified_query_name).\nThey can be executed\
+    \ using the [query endpoint](query.html#tag/Query/operation/query_execute_stored_query_body)."
+  humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  tags:
+  - Query
+  properties:
+  - type: OpenAPI
+    url: openapi/openehr-query-api-openapi.yml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/ehr-validation.openapi.yaml
+  - type: JSONSchema
+    url: json-schema/openehr-rm-1.1.0-all.json
+  - type: JSONSchema
+    url: >-
+      https://specifications.openehr.org/releases/ITS-JSON/latest/components/openehr_rm_1.1.0_all.json
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/query.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/query-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/definition.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/definition-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/overview.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/system-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/demographic.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/demographic-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/admin.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/admin-validation.openapi.yaml
+- aid: openehr:openehr-role-api
+  name: openEHR ROLE API
+  description: >-
+    Management of the [ROLE](https://specifications.openehr.org/releases/RM/latest/demographic.html#_role_class)
+    class.
+  humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  tags:
+  - ROLE
+  properties:
+  - type: OpenAPI
+    url: openapi/openehr-role-api-openapi.yml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/ehr-validation.openapi.yaml
+  - type: JSONSchema
+    url: json-schema/openehr-rm-1.1.0-all.json
+  - type: JSONSchema
+    url: >-
+      https://specifications.openehr.org/releases/ITS-JSON/latest/components/openehr_rm_1.1.0_all.json
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/query.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/query-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/definition.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/definition-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/overview.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/system-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/demographic.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/demographic-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/admin.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/admin-validation.openapi.yaml
+- aid: openehr:openehr-versioned-party-api
+  name: openEHR VERSIONED PARTY API
+  description: >-
+    Management of the [VERSIONED_PARTY](https://specifications.openehr.org/releases/RM/latest/demographic.html#_versioned_party_class)
+    class.
+  humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  tags:
+  - VERSIONED_PARTY
+  properties:
+  - type: OpenAPI
+    url: openapi/openehr-versioned-party-api-openapi.yml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/ehr-validation.openapi.yaml
+  - type: JSONSchema
+    url: json-schema/openehr-rm-1.1.0-all.json
+  - type: JSONSchema
+    url: >-
+      https://specifications.openehr.org/releases/ITS-JSON/latest/components/openehr_rm_1.1.0_all.json
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/query.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/query-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/definition.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/definition-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/overview.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/system-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/demographic.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/demographic-validation.openapi.yaml
+  - type: Specification
+    url: https://specifications.openehr.org/releases/ITS-REST/latest/admin.html
+  - type: SourceCode
+    url: >-
+      https://github.com/openEHR/specifications-ITS-REST/blob/master/computable/OAS/admin-validation.openapi.yaml
 maintainers:
 - FN: Kin Lane
   email: info@apievangelist.com
