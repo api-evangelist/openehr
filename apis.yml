@@ -214,6 +214,8 @@ apis:
     class.
   humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
   tags:
+  - Agents
+  tags_raw:
   - AGENT
   properties:
   - type: OpenAPI
@@ -361,6 +363,8 @@ apis:
     structure.
   humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
   tags:
+  - Directory
+  tags_raw:
   - DIRECTORY
   properties:
   - type: OpenAPI
@@ -503,6 +507,8 @@ apis:
     class.
   humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
   tags:
+  - Group
+  tags_raw:
   - GROUP
   properties:
   - type: OpenAPI
@@ -639,6 +645,8 @@ apis:
     class.
   humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
   tags:
+  - Organisation
+  tags_raw:
   - ORGANISATION
   properties:
   - type: OpenAPI
@@ -685,6 +693,8 @@ apis:
     class.
   humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
   tags:
+  - Persons
+  tags_raw:
   - PERSON
   properties:
   - type: OpenAPI
@@ -779,6 +789,8 @@ apis:
     class.
   humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
   tags:
+  - Role
+  tags_raw:
   - ROLE
   properties:
   - type: OpenAPI
