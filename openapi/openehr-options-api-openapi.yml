@@ -48,6 +48,42 @@ paths:
         '200':
           $ref: '#/components/responses/200_options'
 components:
+  headers:
+    ContentType_JSON:
+      schema:
+        type: string
+        enum:
+        - application/json
+    Allow:
+      description: 'The `Allow` header lists the set of methods supported.
+
+        '
+      schema:
+        type: string
+        example: GET, POST, PUT, DELETE, OPTIONS
+  responses:
+    200_options:
+      description: '`200 OK` is returned when options and conformance statement was retrieved successfully.
+
+        '
+      headers:
+        Allow:
+          $ref: '#/components/headers/Allow'
+        Content-Type:
+          $ref: '#/components/headers/ContentType_JSON'
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Options'
+  parameters:
+    Accept_JSON:
+      name: Accept
+      in: header
+      style: simple
+      schema:
+        type: string
+        enum:
+        - application/json
   schemas:
     Options:
       title: Options
@@ -79,42 +115,6 @@ components:
         - /definition
         - /query
         - /admin
-  responses:
-    200_options:
-      description: '`200 OK` is returned when options and conformance statement was retrieved successfully.
-
-        '
-      headers:
-        Allow:
-          $ref: '#/components/headers/Allow'
-        Content-Type:
-          $ref: '#/components/headers/ContentType_JSON'
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/Options'
-  parameters:
-    Accept_JSON:
-      name: Accept
-      in: header
-      style: simple
-      schema:
-        type: string
-        enum:
-        - application/json
-  headers:
-    Allow:
-      description: 'The `Allow` header lists the set of methods supported.
-
-        '
-      schema:
-        type: string
-        example: GET, POST, PUT, DELETE, OPTIONS
-    ContentType_JSON:
-      schema:
-        type: string
-        enum:
-        - application/json
 x-tagGroups:
 - name: Resource endpoints
   tags:
