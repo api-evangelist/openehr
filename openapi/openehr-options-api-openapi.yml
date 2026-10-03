@@ -48,6 +48,15 @@ paths:
         '200':
           $ref: '#/components/responses/200_options'
 components:
+  parameters:
+    Accept_JSON:
+      name: Accept
+      in: header
+      style: simple
+      schema:
+        type: string
+        enum:
+        - application/json
   headers:
     ContentType_JSON:
       schema:
@@ -75,15 +84,6 @@ components:
         application/json:
           schema:
             $ref: '#/components/schemas/Options'
-  parameters:
-    Accept_JSON:
-      name: Accept
-      in: header
-      style: simple
-      schema:
-        type: string
-        enum:
-        - application/json
   schemas:
     Options:
       title: Options
