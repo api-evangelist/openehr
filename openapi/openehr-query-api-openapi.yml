@@ -334,22 +334,213 @@ paths:
           default: openEHRSys.example.com
           description: The (example) server base URL prefix providing openEHR services. This may contain server name, port and base path prefix.
 components:
+  headers:
+    ContentType_JSON:
+      schema:
+        type: string
+        enum:
+        - application/json
+    Location_Query:
+      description: 'The `Location` response header indicates the URL of the Stored Query resource.
+
+        '
+      schema:
+        type: string
+        format: url
+        example: https://openEHRSys.example.com/v1/definition/query/org.openehr::compositions/1.0.1
+    ETag_RESULT_SET:
+      description: 'The `ETag` (i.e. entity tag) response header is an identifier of the RESULT_SET.
+
+        '
+      schema:
+        type: string
+        example: W/"cdbb5db1-e466-4429-a9e5-bf80a54e120b"
+  parameters:
+    qualified_query_name:
+      name: qualified_query_name
+      in: path
+      description: 'The (fully qualified) name of the query to be executed, in a format of `[{namespace}::]{query-name}`. See [Query Name](#tag/Qualified_query_name) for details on syntax.
+
+        '
+      required: true
+      style: simple
+      schema:
+        $ref: '#/components/schemas/QueryName'
+    ContentType_text:
+      name: Content-Type
+      in: header
+      style: simple
+      schema:
+        type: string
+        enum:
+        - text/plain
+    Accept_JSON:
+      name: Accept
+      in: header
+      style: simple
+      schema:
+        type: string
+        enum:
+        - application/json
+    version:
+      name: version
+      in: path
+      description: 'A SEMVER version number.
+
+        This can be an exact version (e.g. `1.7.1`), or a pattern as partial prefix, in a form of `{major}` or `{major}.{minor}` (e.g. `1` or `1.0`), in which case the highest (latest) version matching the prefix will be considered.
+
+        '
+      required: true
+      style: simple
+      schema:
+        type: string
+        example: '1.0'
+    query_type:
+      name: query_type
+      in: query
+      description: 'Parameter indicating the query language/type.
+
+        '
+      style: form
+      explode: true
+      schema:
+        type: string
+        default: AQL
+        example: AQL
+    query_parameters:
+      name: query_parameters
+      in: query
+      description: 'Query parameters (can appear multiple times).
+
+        '
+      style: form
+      explode: true
+      schema:
+        $ref: '#/components/schemas/QueryParameters'
+    q:
+      name: q
+      in: query
+      description: 'The AQL query to be executed.
+
+        '
+      required: true
+      style: form
+      explode: true
+      schema:
+        $ref: '#/components/schemas/AQL'
+    offset:
+      name: offset
+      in: query
+      description: 'The row number in result-set to start result-set from (`0`-based), default is `0`.
+
+        '
+      style: form
+      explode: true
+      schema:
+        type: integer
+        default: 0
+        example: 10
+    fetch:
+      name: fetch
+      in: query
+      description: 'Number of rows to fetch (the default depends on the implementation).
+
+        '
+      style: form
+      explode: true
+      schema:
+        type: integer
+        example: 10
+    ehr_id_Query:
+      name: ehr_id
+      in: query
+      description: 'An optional parameter to execute the query within an EHR context.
+
+        '
+      style: form
+      explode: true
+      schema:
+        type: string
+        format: uuid
+        example: 7d44b88c-4199-4bad-97dc-d78268e01398
+    ContentType_JSON:
+      name: Content-Type
+      in: header
+      style: simple
+      schema:
+        type: string
+        enum:
+        - application/json
+  responses:
+    200_StoredQuery_get:
+      description: '`200 OK` is returned when the stored AQL is successfully retrieved.
+
+        '
+      headers:
+        Content-Type:
+          $ref: '#/components/headers/ContentType_JSON'
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/StoredQuery'
+    200_StoredQuery_stored:
+      description: '`200 OK` is returned when the query was successfully stored.
+
+        '
+      headers:
+        Location:
+          $ref: '#/components/headers/Location_Query'
+    '400':
+      description: "`400 Bad Request` is returned when the request could not be parsed or is invalid (e.g. malformed request URL syntax, missing required header or parameter, or syntactically invalid header, parameter or content). \nThe response body MAY contain error details.\n"
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    409_StoredQuery_version:
+      description: '`409 Conflict` is returned when a query with the given `qualified_query_name` and `version` already exists on the server.
+
+        '
+    200_QueryList:
+      description: '`200 OK` is returned when the query resources are successfully retrieved.
+
+        '
+      headers:
+        Content-Type:
+          $ref: '#/components/headers/ContentType_JSON'
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/QueryList'
+    404_Query_version:
+      description: '`404 Not Found` is returned when a stored query with `qualified_query_name` and `version` does not exist.
+
+        '
+    408_Query:
+      description: '`408 Request Timeout` is returned when there is a query execution timeout (i.e. maximum query execution time reached, therefore the server aborted the execution of the query).
+
+        '
+    200_Query:
+      description: '`200 OK` is returned when the server is able to execute the query.
+
+        '
+      headers:
+        ETag:
+          $ref: '#/components/headers/ETag_RESULT_SET'
+        Content-Type:
+          $ref: '#/components/headers/ContentType_JSON'
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ResultSet'
+    400_Query:
+      description: '`400 Bad Request` is returned when the server was unable to execute the query due to invalid input, e.g. a required parameter is missing, or at least one of the parameters has an invalid syntax.
+
+        '
+    404_Query:
+      description: '`404 Not Found` is returned when a stored query with `qualified_query_name` does not exist.
+
+        '
   schemas:
-    AQL:
-      title: AQL
-      type: string
-      description: 'The given AQL query.
-
-        '
-      example: SELECT e/ehr_id/value, c/context/start_time/value as startTime, obs/data[at0001]/events[at0006]/data[at0003]/items[at0004]/value/magnitude AS systolic, c/uid/value AS cid, c/name FROM EHR e CONTAINS COMPOSITION c[openEHR-EHR-COMPOSITION.encounter.v1] CONTAINS OBSERVATION obs[openEHR-EHR-OBSERVATION.blood_pressure.v1] WHERE obs/data[at0001]/events[at0006]/data[at0003]/items[at0004]/value/magnitude >= $systolic_bp
-    QueryType:
-      title: QueryType
-      type: string
-      description: 'Query formalism type.
-
-        '
-      default: AQL
-      example: AQL
     StoredQuery:
       title: StoredQuery
       required:
@@ -380,6 +571,33 @@ components:
         version: 1.0.1
         saved: '2017-07-16T19:20:30.450+01:00'
         q: SELECT c FROM EHR e[ehr_id/value=$ehr_id] CONTAINS COMPOSITION c[$compositionid] WHERE c/name/value = 'Vitals'
+    QueryType:
+      title: QueryType
+      type: string
+      description: 'Query formalism type.
+
+        '
+      default: AQL
+      example: AQL
+    Error:
+      title: Error
+      required:
+      - message
+      - validationErrors
+      type: object
+      properties:
+        message:
+          type: string
+        validationErrors:
+          type: array
+          items:
+            type: string
+          description: ''
+      example:
+        message: Error message
+        validationErrors:
+        - error1
+        - error2
     QueryName:
       title: QueryName
       type: string
@@ -411,34 +629,47 @@ components:
         version: 1.1.7
         saved: '2018-06-13T09:37:20.530+01:00'
         q: "SELECT c  FROM EHR e[ehr_id/value=$ehr_id] \n  CONTAINS COMPOSITION c[$uid] \nWHERE c/name/value = 'Vitals'"
-    Error:
-      title: Error
-      required:
-      - message
-      - validationErrors
+    AQL:
+      title: AQL
+      type: string
+      description: 'The given AQL query.
+
+        '
+      example: SELECT e/ehr_id/value, c/context/start_time/value as startTime, obs/data[at0001]/events[at0006]/data[at0003]/items[at0004]/value/magnitude AS systolic, c/uid/value AS cid, c/name FROM EHR e CONTAINS COMPOSITION c[openEHR-EHR-COMPOSITION.encounter.v1] CONTAINS OBSERVATION obs[openEHR-EHR-OBSERVATION.blood_pressure.v1] WHERE obs/data[at0001]/events[at0006]/data[at0003]/items[at0004]/value/magnitude >= $systolic_bp
+    ResultSetMetadata:
+      title: ResultSetMetadata
       type: object
       properties:
-        message:
+        _href:
           type: string
-        validationErrors:
-          type: array
-          items:
-            type: string
-          description: ''
-      example:
-        message: Error message
-        validationErrors:
-        - error1
-        - error2
-    QueryParameters:
-      title: QueryParameters
-      type: object
-      description: 'A set of query parameters.
+          description: URL of the executed query (only for GET endpoint).
+          format: uri
+        _type:
+          type: string
+          description: The type of the serialized result object.
+        _schema_version:
+          type: string
+          description: The version of the specification defining the serialized object.
+        _created:
+          type: string
+          description: Result creation time (in the extended ISO 8601 format).
+          format: date-time
+        _generator:
+          type: string
+          description: Some identifier of the application that generated the result, useful for debugging.
+        _executed_aql:
+          type: string
+          description: "The actual AQL query that was executed by the server, after replacing the query parameters. \nThis attribute is not mandatory, but is useful for debugging.\n"
+      description: 'RESULT_SET metadata.
 
         '
       example:
-        ehr_id: 7d44b88c-4199-4bad-97dc-d78268e01398
-        systolic_bp: 140
+        _href: https://openEHRSys.example.com/v1/query/org.openehr::compositions
+        _type: RESULTSET
+        _schema_version: 1.0.0
+        _created: '2017-08-19T00:25:47.568+02:00'
+        _generator: openEHRSys.ResultSets.Serialization.Json.ResultSetJsonWriter (5.0.0.0)
+        _executed_aql: SELECT e/ehr_id/value, c/context/start_time/value as startTime, obs/data[at0001]/events[at0006]/data[at0003]/items[at0004]/value/magnitude AS systolic, c/uid/value AS cid, c/name FROM EHR e CONTAINS COMPOSITION c[openEHR-EHR-COMPOSITION.encounter.v1] CONTAINS OBSERVATION obs[openEHR-EHR-OBSERVATION.blood_pressure.v1] WHERE obs/data[at0001]/events[at0006]/data[at0003]/items[at0004]/value/magnitude >= 50
       additionalProperties: true
     Offset:
       title: Offset
@@ -486,14 +717,6 @@ components:
           description: 'An ordered set of RESULT_SET rows.
 
             '
-    Fetch:
-      title: Fetch
-      type: integer
-      description: 'Number of rows to fetch (the default depends on the implementation).
-
-        '
-      format: int32
-      example: 10
     AdhocQueryExecute:
       title: AdhocQueryExecute
       required:
@@ -508,41 +731,30 @@ components:
           $ref: '#/components/schemas/Fetch'
         query_parameters:
           $ref: '#/components/schemas/QueryParameters'
-    ResultSetMetadata:
-      title: ResultSetMetadata
+    QueryParameters:
+      title: QueryParameters
       type: object
-      properties:
-        _href:
-          type: string
-          description: URL of the executed query (only for GET endpoint).
-          format: uri
-        _type:
-          type: string
-          description: The type of the serialized result object.
-        _schema_version:
-          type: string
-          description: The version of the specification defining the serialized object.
-        _created:
-          type: string
-          description: Result creation time (in the extended ISO 8601 format).
-          format: date-time
-        _generator:
-          type: string
-          description: Some identifier of the application that generated the result, useful for debugging.
-        _executed_aql:
-          type: string
-          description: "The actual AQL query that was executed by the server, after replacing the query parameters. \nThis attribute is not mandatory, but is useful for debugging.\n"
-      description: 'RESULT_SET metadata.
+      description: 'A set of query parameters.
 
         '
       example:
-        _href: https://openEHRSys.example.com/v1/query/org.openehr::compositions
-        _type: RESULTSET
-        _schema_version: 1.0.0
-        _created: '2017-08-19T00:25:47.568+02:00'
-        _generator: openEHRSys.ResultSets.Serialization.Json.ResultSetJsonWriter (5.0.0.0)
-        _executed_aql: SELECT e/ehr_id/value, c/context/start_time/value as startTime, obs/data[at0001]/events[at0006]/data[at0003]/items[at0004]/value/magnitude AS systolic, c/uid/value AS cid, c/name FROM EHR e CONTAINS COMPOSITION c[openEHR-EHR-COMPOSITION.encounter.v1] CONTAINS OBSERVATION obs[openEHR-EHR-OBSERVATION.blood_pressure.v1] WHERE obs/data[at0001]/events[at0006]/data[at0003]/items[at0004]/value/magnitude >= 50
+        ehr_id: 7d44b88c-4199-4bad-97dc-d78268e01398
+        systolic_bp: 140
       additionalProperties: true
+    Query:
+      title: Query
+      required:
+      - offset
+      - fetch
+      - query_parameters
+      type: object
+      properties:
+        offset:
+          $ref: '#/components/schemas/Offset'
+        fetch:
+          $ref: '#/components/schemas/Fetch'
+        query_parameters:
+          $ref: '#/components/schemas/QueryParameters'
     ResultSetRow:
       title: RESULT_SET_ROW
       type: array
@@ -555,6 +767,14 @@ components:
       - 90910cf0-66a0-4382-b1f8-c0f27e81b42d::openEHRSys.example.com::1
       - _type: DV_TEXT
         value: Labs
+    Fetch:
+      title: Fetch
+      type: integer
+      description: 'Number of rows to fetch (the default depends on the implementation).
+
+        '
+      format: int32
+      example: 10
     ResultSetColumn:
       title: RESULT_SET_COLUMN
       required:
@@ -575,226 +795,6 @@ components:
       example:
         name: '#0'
         path: /ehr_id/value
-    Query:
-      title: Query
-      required:
-      - offset
-      - fetch
-      - query_parameters
-      type: object
-      properties:
-        offset:
-          $ref: '#/components/schemas/Offset'
-        fetch:
-          $ref: '#/components/schemas/Fetch'
-        query_parameters:
-          $ref: '#/components/schemas/QueryParameters'
-  responses:
-    200_QueryList:
-      description: '`200 OK` is returned when the query resources are successfully retrieved.
-
-        '
-      headers:
-        Content-Type:
-          $ref: '#/components/headers/ContentType_JSON'
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/QueryList'
-    '400':
-      description: "`400 Bad Request` is returned when the request could not be parsed or is invalid (e.g. malformed request URL syntax, missing required header or parameter, or syntactically invalid header, parameter or content). \nThe response body MAY contain error details.\n"
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/Error'
-    200_StoredQuery_stored:
-      description: '`200 OK` is returned when the query was successfully stored.
-
-        '
-      headers:
-        Location:
-          $ref: '#/components/headers/Location_Query'
-    409_StoredQuery_version:
-      description: '`409 Conflict` is returned when a query with the given `qualified_query_name` and `version` already exists on the server.
-
-        '
-    404_Query_version:
-      description: '`404 Not Found` is returned when a stored query with `qualified_query_name` and `version` does not exist.
-
-        '
-    200_StoredQuery_get:
-      description: '`200 OK` is returned when the stored AQL is successfully retrieved.
-
-        '
-      headers:
-        Content-Type:
-          $ref: '#/components/headers/ContentType_JSON'
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/StoredQuery'
-    404_Query:
-      description: '`404 Not Found` is returned when a stored query with `qualified_query_name` does not exist.
-
-        '
-    408_Query:
-      description: '`408 Request Timeout` is returned when there is a query execution timeout (i.e. maximum query execution time reached, therefore the server aborted the execution of the query).
-
-        '
-    400_Query:
-      description: '`400 Bad Request` is returned when the server was unable to execute the query due to invalid input, e.g. a required parameter is missing, or at least one of the parameters has an invalid syntax.
-
-        '
-    200_Query:
-      description: '`200 OK` is returned when the server is able to execute the query.
-
-        '
-      headers:
-        ETag:
-          $ref: '#/components/headers/ETag_RESULT_SET'
-        Content-Type:
-          $ref: '#/components/headers/ContentType_JSON'
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/ResultSet'
-  headers:
-    ContentType_JSON:
-      schema:
-        type: string
-        enum:
-        - application/json
-    Location_Query:
-      description: 'The `Location` response header indicates the URL of the Stored Query resource.
-
-        '
-      schema:
-        type: string
-        format: url
-        example: https://openEHRSys.example.com/v1/definition/query/org.openehr::compositions/1.0.1
-    ETag_RESULT_SET:
-      description: 'The `ETag` (i.e. entity tag) response header is an identifier of the RESULT_SET.
-
-        '
-      schema:
-        type: string
-        example: W/"cdbb5db1-e466-4429-a9e5-bf80a54e120b"
-  parameters:
-    Accept_JSON:
-      name: Accept
-      in: header
-      style: simple
-      schema:
-        type: string
-        enum:
-        - application/json
-    ContentType_text:
-      name: Content-Type
-      in: header
-      style: simple
-      schema:
-        type: string
-        enum:
-        - text/plain
-    version:
-      name: version
-      in: path
-      description: 'A SEMVER version number.
-
-        This can be an exact version (e.g. `1.7.1`), or a pattern as partial prefix, in a form of `{major}` or `{major}.{minor}` (e.g. `1` or `1.0`), in which case the highest (latest) version matching the prefix will be considered.
-
-        '
-      required: true
-      style: simple
-      schema:
-        type: string
-        example: '1.0'
-    qualified_query_name:
-      name: qualified_query_name
-      in: path
-      description: 'The (fully qualified) name of the query to be executed, in a format of `[{namespace}::]{query-name}`. See [Query Name](#tag/Qualified_query_name) for details on syntax.
-
-        '
-      required: true
-      style: simple
-      schema:
-        $ref: '#/components/schemas/QueryName'
-    query_type:
-      name: query_type
-      in: query
-      description: 'Parameter indicating the query language/type.
-
-        '
-      style: form
-      explode: true
-      schema:
-        type: string
-        default: AQL
-        example: AQL
-    offset:
-      name: offset
-      in: query
-      description: 'The row number in result-set to start result-set from (`0`-based), default is `0`.
-
-        '
-      style: form
-      explode: true
-      schema:
-        type: integer
-        default: 0
-        example: 10
-    fetch:
-      name: fetch
-      in: query
-      description: 'Number of rows to fetch (the default depends on the implementation).
-
-        '
-      style: form
-      explode: true
-      schema:
-        type: integer
-        example: 10
-    ContentType_JSON:
-      name: Content-Type
-      in: header
-      style: simple
-      schema:
-        type: string
-        enum:
-        - application/json
-    ehr_id_Query:
-      name: ehr_id
-      in: query
-      description: 'An optional parameter to execute the query within an EHR context.
-
-        '
-      style: form
-      explode: true
-      schema:
-        type: string
-        format: uuid
-        example: 7d44b88c-4199-4bad-97dc-d78268e01398
-    query_parameters:
-      name: query_parameters
-      in: query
-      description: 'Query parameters (can appear multiple times).
-
-        '
-      style: form
-      explode: true
-      schema:
-        $ref: '#/components/schemas/QueryParameters'
-    q:
-      name: q
-      in: query
-      description: 'The AQL query to be executed.
-
-        '
-      required: true
-      style: form
-      explode: true
-      schema:
-        $ref: '#/components/schemas/AQL'
 x-refined-from:
 - openehr-definition-openapi.yml
 - openehr-query-openapi.yml
