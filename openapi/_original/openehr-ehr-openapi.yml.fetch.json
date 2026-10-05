@@ -1,0 +1,12 @@
+{
+ "url": "https://specifications.openehr.org/releases/ITS-REST/latest/computable/OAS/ehr-validation.openapi.yaml",
+ "requested_url": "https://specifications.openehr.org/releases/ITS-REST/latest/computable/OAS/ehr-validation.openapi.yaml",
+ "status": 200,
+ "content_type": "application/yaml",
+ "bytes": 165523,
+ "sha256": "23e15fb14804653080efdecc78041798058b4d79c69834496a2ea4fa43f90f62",
+ "fetched_at": "2026-10-04",
+ "fetched_by": "APIEvangelist-Harvest/1.0 (+https://apievangelist.com)",
+ "match": "equivalent",
+ "note": "Re-fetched from the provider by verify-openapi-sources.py; the provider's current document describes the same operations (Jaccard 1.0), but the bytes differ, so the archive is an earlier or reformatted copy."
+}
