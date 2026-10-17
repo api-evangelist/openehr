@@ -61,20 +61,6 @@ components:
         type: string
         enum:
         - application/json
-  responses:
-    200_options:
-      description: '`200 OK` is returned when options and conformance statement was retrieved successfully.
-
-        '
-      headers:
-        Allow:
-          $ref: '#/components/headers/Allow'
-        Content-Type:
-          $ref: '#/components/headers/ContentType_JSON'
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/Options'
   parameters:
     Accept_JSON:
       name: Accept
@@ -115,6 +101,20 @@ components:
         - /definition
         - /query
         - /admin
+  responses:
+    200_options:
+      description: '`200 OK` is returned when options and conformance statement was retrieved successfully.
+
+        '
+      headers:
+        Allow:
+          $ref: '#/components/headers/Allow'
+        Content-Type:
+          $ref: '#/components/headers/ContentType_JSON'
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Options'
 x-tagGroups:
 - name: Resource endpoints
   tags:
