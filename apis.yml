@@ -41,7 +41,6 @@ description: 'openEHR is the open specification family for electronic health rec
 tags:
 - openEHR
 - Healthcare
-- EHR
 - Electronic Health Records
 - Health Informatics
 - Standards
@@ -429,6 +428,8 @@ apis:
     Admin management of [EHRs](https://specifications.openehr.org/releases/RM/latest/ehr.html#_ehr_class).
   humanURL: https://specifications.openehr.org/releases/ITS-REST/latest/ehr.html
   tags:
+  - Electronic Health Records
+  tags_raw:
   - EHR
   properties:
   - type: OpenAPI
