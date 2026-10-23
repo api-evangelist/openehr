@@ -1744,3 +1744,9 @@ x-tagGroups:
   - CONTENT_ITEM_schema
   - ITEM_schema
   - ITEM_STRUCTURE_schema
+x-provenance:
+  method: harvested
+  publisher: openEHR
+  source: https://specifications.openehr.org/releases/ITS-REST/latest/computable/OAS/ehr-validation.openapi.yaml
+  note: split by refine-openapis from the provider's own published document, verified by fetch (openapi/_original/*.fetch.json);
+    stamped by stamp-openapi-provenance.py (roadmap#793)
